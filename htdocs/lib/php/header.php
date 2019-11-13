@@ -23,7 +23,7 @@
 				<div class='header_menu'>
 					<a class='header_menu_item' href='/menu/m_menu1/L_main1.php'>메인메뉴1</a>
 					<a class='header_menu_item' href='/menu/m_menu2/L2_main1.php'>메인메뉴2</a>
-					<a class='header_menu_item' href='/menu/m_menu3/main3.php'>메인메뉴3</a>
+					<a class='header_menu_item' href='/menu/m_menu3/L3_main1.php'>메인메뉴3</a>
 					<a class='header_menu_item' href='/menu/m_menu4/main4.php'>메인메뉴4</a>
 					<a class='header_menu_item' href='/menu/m_menu5/main5.php'>메인메뉴5</a>
 				</div>
