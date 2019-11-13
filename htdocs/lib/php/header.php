@@ -14,7 +14,7 @@
 						<a href='/menu/data/data3.php'>강의자료</a>
 					</div>
 				<div  class='header_logo'>
-					<a class='header_logo_text' href='http://st1.bizlet.kr/'>
+					<a class='header_logo_text' href='http://localhost:80/test.php'>
 						로고 이미지
 						<br>
 						크기 정보 : 260 * 40
