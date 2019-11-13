@@ -1,0 +1,144 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+.img2 img {width:250px; margin:10px;border:outset 1px #0000ff;}
+.left_menu_all{float:left;}
+			
+.header_wrap {position:relative; width:100%; height:50px;  z-index:1;}
+.quick_menu_btn {position:absolute; left:2; top:13px; }
+
+.quick_menu {position:absolute; width:150px; height:250px; 
+    left:-150px ; top:100px; z-index:10; background-color:#55f155;}
+.quick_menu a {display:block; line-height:2em;}
+
+
+
+
+.body {width:100%; overflow:hidden;}
+.lmenu {float:left; width:200px; background-color:#f1f1f1; margin:10px; padding:10px; }
+.lmenu a {display:block; text-decoration:none; color:#111; }
+.ct_wrap {float:left; width:800px; padding:10px; }
+.ct_title {font-size:30px; font-weight:600; }
+.ct_box {font-size:15px; color:#555; margin:10px 0 0 0; }
+
+.footer {font-size:13px; background-color:#444; color:#fff; padding:20px; }
+
+.test {border:outset 5px #0000ff; /*테두리 부분 설정*/
+ margin:20; padding:20px; width:1000;
+ background-color:#aaa; color:#111/*111 = 010101의 약자*/;
+font-size:50px; text-align:center;}
+ /*높이 설정을 안하면 내용물에 맞춰서 늘어나거나 줄어듬 
+ 높이를 설정하면 내용물이 무시하고 넘어감 
+ 패딩을 설정하면 보여지는 화면 은 "패딩 + 마진 + 높이,너비" 로 되어있다 디폴트값들이 이런식으로 존재한다. */
+ 
+ /*
+ 크기 설정 단위
+ 
+ px == 픽셀
+ em == %이다  부모 기준으로 1= 100% 1.5=150%
+ rem == 웹 브라우저 기준으로 퍼센트 설정
+ 
+ div == block
+ lineblock
+ span == line
+ 
+ 포지션 속성
+ static == div의 기본
+ relative == 포함관계에서 static 가 relative 안에 포함된다.
+ fixed == 강제로 위치
+ absolute == 태그 항목 안에서 절대 위치 설정 가능
+ 
+ 
+ float 속성 
+ 
+ 
+ */
+
+.first_screen_img{display:table; width:1000px; height:300px; border:outset 1px #0000ff; }
+.first_screen_img_text{ display:table-cell; vertical-align:middle; text-align:center; text-decoration:none;}
+
+
+
+ 
+ .top_menu{ margin:5px;}
+ .top_menu_item{
+float:right; margin-left:10px; margin-right:10px;
+text-decoration:none; font-size:10px; color:#000000;}
+				
+.header {display:table; background-color:#000000; overflow:hidden; width:1000px; height:40px;}
+.header_logo {display:table; width:260px;height:40px; float:left;  background-color:#BDBDBD;}
+.header_logo_text {display:table-cell; vertical-align:middle; text-align:center; text-decoration:none;}
+
+.header_menu {display:table;width:740px;height:40px;}
+.header_menu_item {font-size:17px; color:#fff;
+			display:table-cell; vertical-align:middle; text-align:center; text-decoration:none;}
+			
+.middle_img {display:table; width:1000px; height:173px; border:outset 1px #0000ff;}
+.middle_img_text {display:table-cell; vertical-align:middle; text-align:center; text-decoration:none;}
+ 
+ 
+ .middle_screen{float:left;border:outset 1px #0000ff; width:1000px;}
+ 
+ 
+ .left_menu {border:outset 1px #0000ff;width:200px; float:left; padding:10px; display:line-block;}
+ .left_menu_img{float:left;display:table; width:176px; height:71px; border:outset 1px #0000ff; }
+ .left_menu_img_text{ display:table-cell; vertical-align:middle; text-align:center; text-decoration:none;}
+ .left_menu_item{float:left; display:table; width:176px;height:30px;margin-top:10px;border:outset 1px #0000ff;}
+ .left_menu_item_text{display:table-cell; vertical-align:middle; text-align:center; text-decoration:none;}
+ 
+ 
+ .main_screen {float:left;width:756px;border:outset 1px #0000ff;padding:10px;}
+ .main_screen_img{display:table; width:250px; height:70px; border:outset 1px #0000ff; }
+ .main_screen_img_text{ display:table-cell; vertical-align:middle; text-align:center; text-decoration:none;}
+ .main_contents{  text-align:center; width:730px; min-height:800px;max-height:2000px; background-color:#f1f1f1;
+ margin:10px;border:outset 1px #0000ff; }
+ 
+ .bottom_screen{margin-top:30px; float:left;  border:outset 1px #0000ff;}
+.bottom_logo{display:table; width:250px; height:70px; 
+			display:line-block;float:left;border:outset 1px #0000ff;}
+.bottom_logo_text{display:table-cell; vertical-align:middle; text-align:center; text-decoration:none;}
+.bottom_contents{display:line-block;float:left; border:outset 1px #0000ff;margin-left:30px;}
+.bottom_item{float:left; display:table;margin-top:5px;margin-left:15px;margin-right:15px; text-decoration:none;border:outset 1px #0000ff;}
+.bottom_item_text{display:table-cell; vertical-align:middle; text-align:center; text-decoration:none;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
