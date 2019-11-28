@@ -1,7 +1,7 @@
-				<div class='first_screen_img'>
+ï»¿				<div class='first_screen_img'>
 					<div class='first_screen_img_text'>
-						Ã¹ È­¸é
+						ì²« í™”ë©´
 						<br>
-						(µðÀÚÀÎ ¿¹Á¤)
+						(ë””ìžì¸ ì˜ˆì •)
 					</div>
 				</div>

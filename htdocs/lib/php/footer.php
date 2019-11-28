@@ -1,26 +1,22 @@
-		<div class='bottom_screen'>
+ï»¿		<div class='bottom_screen'>
 			<div class='bottom_logo'>
 				<div class='bottom_logo_text'>
-					·Î°íºÎºÐ
+					ë¡œê³ ë¶€ë¶„
 					<br>
-					Å©±â Á¤º¸ : 250 * 70
+					í¬ê¸° ì •ë³´ : 250 * 70
 				</div>
 			</div>
 			<div class='bottom_contents'>
 				<div>
 					<div class='bottom_item'>
-						<a class='bottom_item_text' href=''>ÇÏ´Ü Á¤º¸ ¸µÅ©1</a>
+						<a class='bottom_item_text' href=''>í•˜ë‹¨ ê¸°íƒ€ ë§í¬1</a>
 					</div>
-					<a class='bottom_item' href=''>ÇÏ´Ü Á¤º¸ ¸µÅ©2</a>
-					<a class='bottom_item' href=''>ÇÏ´Ü Á¤º¸ ¸µÅ©3</a>
-					<a class='bottom_item' href=''>ÇÏ´Ü Á¤º¸ ¸µÅ©4</a>
+					<a class='bottom_item' href=''>í•˜ë‹¨ ê¸°íƒ€ ë§í¬2</a>
+					<a class='bottom_item' href=''>í•˜ë‹¨ ê¸°íƒ€ ë§í¬3</a>
+					<a class='bottom_item' href=''>í•˜ë‹¨ ê¸°íƒ€ ë§í¬4</a>
 				</div>
 				<div style='margin-top:40px;'>
-					ÁÖ¼ÒÁ¤º¸ <br>
-					ÀüÈ­¹øÈ£Á¤º¸ 1¹ø<br>
-					ÀüÈ­¹øÈ£Á¤º¸ 2¹ø<br>
-					ÀüÈ­¹øÈ£Á¤º¸ 3¹ø<br>
-					±âÅ¸Á¤º¸ <br>
+					ê¸°íƒ€ì •ë³´ <br>
 				</div>
 			</div>
 		</div>

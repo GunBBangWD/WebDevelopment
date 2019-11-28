@@ -1,23 +1,34 @@
-<?php
+ï»¿<?php
 include("../lib/php/begin.php");
-echo "<title>°ÇÈñ »çÀÌÆ®</title>";
-echo "<script type='text/javascript' src='local.js'></script>";
+echo "<title>ê±´í¬ ì‚¬ì´íŠ¸</title>";
+echo "<script type='text/javascript' src='local.js'charset='euc-kr'></script>";
 include($project_path . "/lib/php/header.php");
 include($project_path . "/lib/php/db_begin.php");
 include($project_path . "/lib/php/lib.php");
-
-
 echo "<form name='f' method='post' enctype='multipart/form-data'>";
+if($_REQUEST["test"]==1){
 echo "<input type='hidden' value=".$_REQUEST["db_no"]." name='db_no'>";
-echo "<input type='button' value='ÀúÀå' onclick='goSave();'><br>";
+echo "<input type='button' value='ì €ì¥' onclick='goSave();'><br>";
 
 echo "<table class='EditTbl2' width='100%' cellspacing='0' cellpadding='0' style=''>";
-	show_td("Á¦¸ñ", "<input type='text' name='txtBstitle' value='" .$_REQUEST["db_title"]. "' style='width:100%;'>");
-	show_td("±Û¾´ÀÌ", "<input type='text' name='txtBiwriter' value='" .$_REQUEST["db_writer"]. "' style='width:100%;'>");
-	show_td("³»¿ë", "<textarea name='txtBitext' style='width:100%; height:200px; '>" .$_REQUEST["db_text"]. "</textarea>");
-	//show_td("Ã·ºÎÆÄÀÏ", "<input type='file' name='fileupload' onchange=' goUpload(); '>");
-	show_td("Ã·ºÎÆÄÀÏ", "<input type='file' name='fileupload'>");
+	show_td("ì œëª©", "<input type='text' name='txtBstitle' value='" .$_REQUEST["db_title"]. "' style='width:100%;'>");
+	show_td("ê¸€ì“´ì´", "<input type='text' name='txtBiwriter' value='" .$_REQUEST["db_writer"]. "' style='width:100%;'>");
+	show_td("ë‚´ìš©", "<textarea name='txtBitext' style='width:100%; height:200px; '>" .$_REQUEST["db_text"]. "</textarea>");
+	//show_td("ì²¨ë¶€íŒŒì¼", "<input type='file' name='fileupload' onchange=' goUpload(); '>");
+	show_td("ì²¨ë¶€íŒŒì¼", "<input type='file' name='fileupload'>");
 echo "</table>";
+}else{
+	echo "<input type='hidden' value=-1 name='db_no'>";
+	echo "<input type='button' value='ì €ì¥' onclick='goSave();'><br>";
+
+	echo "<table class='EditTbl2' width='100%' cellspacing='0' cellpadding='0' style=''>";
+		show_td("ì œëª©", "<input type='text' name='txtBstitle' style='width:100%;'>");
+		show_td("ê¸€ì“´ì´", "<input type='text' name='txtBiwriter'  style='width:100%;'>");
+		show_td("ë‚´ìš©", "<textarea name='txtBitext' style='width:100%; height:200px; '></textarea>");
+		//show_td("ì²¨ë¶€íŒŒì¼", "<input type='file' name='fileupload' onchange=' goUpload(); '>");
+		show_td("ì²¨ë¶€íŒŒì¼", "<input type='file' name='fileupload'>");
+	echo "</table>";
+}
 
 echo "</form>";
 

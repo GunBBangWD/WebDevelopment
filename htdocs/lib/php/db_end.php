@@ -1,3 +1,3 @@
-<?php
-mysql_close($db_connect);
+﻿<?php
+mysqli_close($db_connect);
 ?>

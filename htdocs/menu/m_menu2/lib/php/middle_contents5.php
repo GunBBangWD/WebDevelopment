@@ -1,15 +1,15 @@
-			<div class='main_screen'>
+ï»¿			<div class='main_screen'>
 				<div class='main_screen_img'>
 					<div class='main_screen_img_text'>
-						¸ÞÀÎ¸Þ´º2 -> ¿ÞÂÊ¸Þ´º5 ÀÌ¹ÌÁö
+						ë©”ì¸ë©”ë‰´2 -> ì™¼ìª½ë©”ë‰´5 ì´ë¯¸ì§€
 						<br>
-						Å©±â Á¤º¸ : 250 * 70
+						í¬ê¸° ì •ë³´ : 250 * 70
 					</div>
 				</div>
 				<div class='main_contents'>
-					¸ÞÀÎ¸Þ´º2 -> ¿ÞÂÊ¸Þ´º5 ³»¿ëµé(µðÀÚÀÎ ¿¹Á¤)
+					ë©”ì¸ë©”ë‰´2 -> ì™¼ìª½ë©”ë‰´5 ë‚´ìš©ë“¤(ë””ìžì¸ ì˜ˆì •)
 					<br> 
-					Å©±â Á¤º¸ : 730 * 500
+					í¬ê¸° ì •ë³´ : 730 * 500
 				</div>
 			</div>
 		</div>

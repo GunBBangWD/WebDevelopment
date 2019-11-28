@@ -1,24 +1,19 @@
-<?php
-$db_name = "test";
+ï»¿<?php
+$db_name = "testtest";
 $db_username = "test";
 $db_password = "!gksrjs0425";
 
-$db_connect = mysqli_connect("localhost", $db_username, $db_password, true);
+$db_connect = mysqli_connect("localhost:3306", $db_username, $db_password,$db_name, 3306);
 if (!$db_connect) {
-	die("MySQL Á¢¼Ó ¿¡·¯ !");
-}
-$db = mysql_select_db($db_name, $db_connect);
-if ($db == "") {
-	echo "µ¥ÀÌÅÍº£ÀÌ½º°¡ »ý¼ºµÇÁö ¾Ê¾Ò½À´Ï´Ù(" .$db_name. ")";
-	die();
-}
+	die("MySQL ì ‘ì† ì—ëŸ¬ !");
+}	
 
 
 function GetLastDbKey($db_connect) {
 	$maxkey = "";
 	$strSQL = "select last_insert_id() as max_key ";
-	$result = mysql_query($strSQL, $db_connect);
-	if ($rs = mysql_fetch_array($result)) {
+	$result = mysqli_query($db_connect,$strSQL);
+	if ($rs = mysqli_fetch_array($result)) {
 		$maxkey = $rs["max_key"];
 	}
 	return $maxkey;
@@ -26,8 +21,8 @@ function GetLastDbKey($db_connect) {
 function GetAttfMaxSeno($db_connect, $bsrdno) {
 	$max_seno = 1;
 	$strSQL = "select max(atseno) as max_seno from st1_board_attf where atnum = '" .$bsrdno. "' ";
-	$result = mysql_query($strSQL, $db_connect);
-	if ($rs = mysql_fetch_array($result)) {
+	$result = mysqli_query($db_connect,$strSQL);
+	if ($rs = mysqli_fetch_array($result)) {
 		$max_seno = intval($rs["max_seno"]) + 1;
 	}
 	return $max_seno;
@@ -35,7 +30,7 @@ function GetAttfMaxSeno($db_connect, $bsrdno) {
 
 
 /*
-    last_insert_id()  ¸¶Áö¸·¿¡ ÀÎ¼­Æ® ÇßÀ»¤§¶§ÀÇ Å° °ªÀ» °¡Á®¿À´Â ÇÔ¼ö
+    last_insert_id()  ë§ˆì§€ë§‰ì— ì¸ì„œíŠ¸ í–ˆì„ã„·ë•Œì˜ í‚¤ ê°’ì„ ê°€ì ¸ì˜¤ëŠ” í•¨ìˆ˜
 	
 	
 */

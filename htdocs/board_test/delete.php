@@ -1,22 +1,22 @@
-<?php
+Ôªø<?php
 include("../lib/php/begin.php");
-echo "<title>∞«»Ò ªÁ¿Ã∆Æ</title>";
-echo "<script type='text/javascript' src='local.js'></script>";
+echo "<title>Í±¥Ìù¨ ÏÇ¨Ïù¥Ìä∏</title>";
+echo "<script type='text/javascript' src='local.js'charset=utf-8></script>";
 include($project_path . "/lib/php/header.php");
 include($project_path . "/lib/php/db_begin.php");
 echo "<form name='f' method='post'>";
 echo "</form>";
 
-echo "<input type='button' value='∏ÆΩ∫∆Æ∑Œ µπæ∆∞°±‚' onclick='goList();'>";
-echo "<div> ªË¡¶ øœ∑· </div>";
+echo "<input type='button' value='Î¶¨Ïä§Ìä∏Î°ú ÎèåÏïÑÍ∞ÄÍ∏∞' onclick='goList();'>";
+echo "<div> ÏÇ≠Ï†ú ÏôÑÎ£å </div>";
 
 
 $strSQL = "delete from st1_board_item where ";
 $strSQL.= "bino=".$_REQUEST["in_data2"]." ";
 						echo "<br>".$strSQL;
-						$result = mysql_query($strSQL, $db_connect);
+						$result = mysqli_query($db_connect, $strSQL);
 						if (!$result) {
-							echo "Error : " . mysql_error();
+							echo "Error : " . mysqli_error($db_connect);
 							die();
 						}
 include($project_path . "/lib/php/db_end.php");

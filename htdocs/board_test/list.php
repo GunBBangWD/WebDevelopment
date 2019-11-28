@@ -1,6 +1,6 @@
-<?php
+Ôªø<?php
 include("../lib/php/begin.php");
-echo "<title>∞«»Ò ªÁ¿Ã∆Æ</title>";
+echo "<title>Í±¥Ìù¨ ÏÇ¨Ïù¥Ìä∏</title>";
 echo "<script type='text/javascript' src='local.js'></script>";
 include($project_path . "/lib/php/header.php");
 include($project_path . "/lib/php/db_begin.php");
@@ -10,30 +10,31 @@ $onMouseOverOut.= " onmouseout =\"this.style.backgroundColor='';return true; \" 
 
 echo "<form name='f' method='post'>";
 echo "<input type='hidden' name='in_data'>";
-echo "<input type='hidden' name='test'>";
+echo "<input type='hidden' name='test' value=0>";
+echo "<input type='button' value='Í∏ÄÏì∞Í∏∞' onclick='goWrite();'>";
+
 echo "</form>";
-echo "<input type='button' value='±€æ≤±‚' onclick='goWrite();'>";
 
 echo "<table border='1' class='bbs_list' cellspacing='0' >";
 echo "<tr>";
 echo "<th>No</th>";
-echo "<th>¡¶∏Ò</th>";
-echo "<th>±€æ¥¿Ã</th>";
-echo "<th>≥Ø¬•</th>";
-echo "<th>¡∂»∏</th>";
+echo "<th>Ï†úÎ™©</th>";
+echo "<th>Í∏ÄÏì¥Ïù¥</th>";
+echo "<th>ÎÇ†Ïßú</th>";
+echo "<th>Ï°∞Ìöå</th>";
 echo "</tr>";
 
 
 
 $strSQL = "select * from st1_board_item ";
 						echo "<br>".$strSQL;
-						$result = mysql_query($strSQL, $db_connect);
+						$result = mysqli_query($db_connect, $strSQL);
 						if (!$result) {
-							echo "Error : " . mysql_error();
+							echo "Error : " . mysqli_error($db_connect);
 							die();
 						}
 						$cnt = 0;
-						while ($rs = mysql_fetch_array($result)) {
+						while ($rs = mysqli_fetch_array($result)) {
 						$cnt++;
 							echo "<tr onclick=\"goView('" .$rs["bino"]. "');\" " .$onMouseOverOut. " style='cursor:pointer; '>";
 								echo "<td>" . $cnt . "</td>";
@@ -43,7 +44,7 @@ $strSQL = "select * from st1_board_item ";
 								echo "<td>" . $rs["bino"] . "</td>";
 							echo "</tr>";
 						}
-						mysql_free_result($result);
+						mysqli_free_result($result);
 
 include($project_path . "/lib/php/db_end.php");
 include($project_path . "/lib/php/end.php");

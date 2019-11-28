@@ -1,10 +1,10 @@
-<?php
-$project_path = "C:/Users/hgh04/Desktop/GitForder/htdocs";
+﻿<?php
+$project_path = "C:/Users/hgh04/Desktop/GitWeb/htdocs";
 ?>
 <html>
 	<head>
-		<meta charset="ANSI">
-		<meta http-equiv='Contant-type' content='text/html; charset=euc-kr'/>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel='stylesheet' type='text/css' href='/lib/css/common.css'/>
 	</head>
 	<body style='width:1000; margin:0 auto;'>

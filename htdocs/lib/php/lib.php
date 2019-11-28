@@ -1,10 +1,11 @@
-<?php
+﻿<?php
 function show_td($title, $val) {
 	echo "<tr>";
-	echo "<th class='th1' width='" .$width1. "'><label>" . $title . "</label></th>";
+	echo "<th class='th1'><label>" . $title . "</label></th>";
 	echo "<td class='td1' width=*>".$val."</td>";
 	echo "</tr>";
 }
+
 
 function filename_ext($filename) {
 	$ext = "";

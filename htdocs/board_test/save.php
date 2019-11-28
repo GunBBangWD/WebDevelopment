@@ -1,6 +1,6 @@
-<?php
+Ôªø<?php
 include("../lib/php/begin.php");
-echo "<title>∞«»Ò ªÁ¿Ã∆Æ</title>";
+echo "<title>Í±¥Ìù¨ ÏÇ¨Ïù¥Ìä∏</title>";
 echo "<script type='text/javascript' src='local.js'></script>";
 include($project_path . "/lib/php/header.php");
 include($project_path . "/lib/php/db_begin.php");
@@ -10,8 +10,8 @@ echo "</form>";
 $strSQL = "select * from st1_board_item where ";
 $strSQL.= "bino=".$_REQUEST["db_no"]." ";
 						echo "<br>".$strSQL;
-						$result = mysql_query($strSQL, $db_connect);
-						if ($rs=mysql_fetch_array($result)) {
+						$result = mysqli_query($db_connect,$strSQL);
+						if ($rs=mysqli_fetch_array($result)) {
 							$IsFound = true;
 						}else{
 							$IsFound = false;
@@ -20,9 +20,9 @@ $strSQL.= "bino=".$_REQUEST["db_no"]." ";
 if($IsFound){
 		$strSQL = "update st1_board_item set biwriter='" .$_REQUEST["txtBiwriter"]. "', bititle='" .$_REQUEST["txtBstitle"]. "',biwrite_time = now() ,bitext='" .$_REQUEST["txtBitext"]."' where bino=".$_REQUEST["db_no"];
 	echo "<br>".$strSQL;
-	$rs = mysql_query($strSQL, $db_connect);
+	$rs = mysqli_query($db_connect,$strSQL);
 	if (!$rs) {
-		echo "Error : " . mysql_error();
+		echo "Error : " . mysqli_error($db_connect);
 		//mysql_query("rollback", $db_connect);
 		die();
 	}
@@ -35,9 +35,9 @@ if($IsFound){
 	$strSQL.= "now() ";
 	$strSQL.= ")";
 	echo "<br>".$strSQL;
-	$rs = mysql_query($strSQL, $db_connect);
+	$rs = mysqli_query($db_connect,$strSQL);
 	if (!$rs) {
-		echo "Error : " . mysql_error();
+		echo "Error : " . mysqli_error($db_connect);
 		//mysql_query("rollback", $db_connect);
 		die();
 	}
@@ -59,15 +59,15 @@ if (is_uploaded_file($_FILES["fileupload"]["tmp_name"])){
 	$strSQL.= "'" .$_FILES["fileupload"]["name"]. "', ";
 	$strSQL.= "'" .$_FILES["fileupload"]["size"]. "' ";
 	$strSQL.= ")";
-	$rs = mysql_query($strSQL, $db_connect);
+	$rs = mysqli_query($db_connect,$strSQL);
 	if (!$rs) {
-		echo "Error : " . mysql_error();
+		echo "Error : " . mysqli_error($db_connect);
 		die();
 	}
 	echo "<br>".$strSQL;
 }
 
-echo "<input type='button' value='∏ÆΩ∫∆Æ∑Œ µπæ∆∞°±‚' onclick='goList();'>";
+echo "<input type='button' value='Î¶¨Ïä§Ìä∏Î°ú ÎèåÏïÑÍ∞ÄÍ∏∞' onclick='goList();'>";
 
 include($project_path . "/lib/php/db_end.php");
 include($project_path . "/lib/php/end.php");

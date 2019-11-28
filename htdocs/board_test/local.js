@@ -1,11 +1,11 @@
-function goWrite() {
+ï»¿function goWrite() {
 	f.target = '_self';
 	f.action = 'write.php';
 	f.submit();
 }
 function goSave() {
 	if(f.txtBstitle.value == ''){
-		alert('Á¦¸ñ ÀÔ·Â ¾ÈÇÔ');
+		alert('ì œëª© ìž…ë ¥ ì•ˆí•¨');
 		return;
 	}
 	f.target = '_self';
@@ -24,7 +24,7 @@ function goList() {
 	f.submit();
 }
 function goDelete(bino) {
-	if(!confirm('»èÁ¦ ÇÏ½Ã°Ú½À´Ï±î?')){
+	if(!confirm('ì‚­ì œ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?')){
 		return;
 	}
 	f.in_data2.value = bino;
