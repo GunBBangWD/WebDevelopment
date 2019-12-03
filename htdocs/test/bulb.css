@@ -1,0 +1,111 @@
+
+
+
+
+
+
+body {
+  background-color: #3dc1d3;
+  margin: 0px;
+  padding: 0px;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 120px;
+  height: 120px;
+  outline: none;
+  -webkit-appearance: none;
+  background-color: white;
+  border-radius: 50%;
+  margin:50px
+}
+
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 47px;
+  border-top: 40px solid white;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  top: 101.5px;
+  left: 17px;
+}
+
+input[type="checkbox"]:after {
+  content: "";
+  position: absolute;
+  background-color: gray;
+  height: 37px;
+  width: 47px;
+  top: 147px;
+  left: 37px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+#ttR:checked {
+  background-color: #c0392b;
+}
+
+#ttR:before {
+  border-top-color: darkslategray;
+}
+
+#ttY:checked {
+  background-color: #ffff33;
+}
+
+#ttY:before {
+  border-top-color: darkslategray;
+}
+
+#ttO:checked {
+  background-color: #f39c12;
+}
+
+#ttO:before {
+  border-top-color: darkslategray;
+}
+
+#ttB:checked {
+  background-color: #3498db;
+}
+
+#ttB:before {
+  border-top-color: darkslategray;
+}
+
+#ttP:checked {
+  background-color: #f8a5c2;
+}
+
+#ttP:before {
+  border-top-color: darkslategray;
+}
+
+#ttG:checked {
+  background-color: #2ecc71;
+}
+
+#ttG:before {
+  border-top-color: darkslategray;
+}
+
+#tt1:checked {
+  background-color: #f5cd79;
+}
+
+#tt1:before {
+  border-top-color: darkslategray;
+}
+
+#tt2:checked {
+  background-color: #574b90;
+}
+
+#tt2:before {
+  border-top-color: darkslategray;
+}
+/*# sourceMappingURL=bulb.css.map */

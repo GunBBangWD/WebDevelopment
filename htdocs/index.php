@@ -1,6 +1,6 @@
-<?php
+Ôªø<?php
 include("lib/php/begin.php");
-echo "<title>∞«»Ò ªÁ¿Ã∆Æ</title>";
+echo "<title>Í±¥Ìù¨ ÏÇ¨Ïù¥Ìä∏</title>";
 include($project_path . "/lib/php/header.php");
 include($project_path . "/lib/php/middle_contents.php");
 include($project_path . "/lib/php/footer.php");

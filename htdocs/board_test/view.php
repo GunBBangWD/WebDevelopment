@@ -37,7 +37,7 @@ $strSQL.= "bino = ".$_REQUEST["in_data"]." ";
 								$strSQL = "select * from st1_board_attf where atnum = '" .$_REQUEST["in_data"]. "' order by atseno ";
 								$result2 = mysqli_query($db_connect, $strSQL);
 								while ($rs2 = mysqli_fetch_array($result2)) {
-									echo "<a href='http://118.45.89.50/attf/" .$rs2["atsvfile"]. "'>";
+									echo "<a href='http://gunbbangWEB.kro.kr/attf/" .$rs2["atsvfile"]. "'>";
 									echo $rs2["atpcfile"] . "[" .$rs2["atfilesize"]. "]";
 									echo "</a><br>";
 								}
