@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form name="form1" action="#" method="get">
+        <fieldset>
+            <legend>text input</legend>
+            <input type="text" name="text1" placeholder="한줄 입력"><br>
+            <input type="text" name="text1" value="기본값" readonly><br>
+            <input type="password" name="pw" placeholder="암호입력" maxlength="10" ><br>
+            <textarea name="message" cols="30" rows="10" placeholder="여러줄 입력"></textarea>
+
+        </fieldset>
+        <fieldset>
+            <legend>select</legend>
+            <label>radio button~~</label><br>
+            <input type="radio" name="lecture" value="html">html<br>
+            <input type="radio" name="lecture" value="css">css<br>
+            <input type="radio" name="lecture" value="java">java<br>
+            <input type="radio" name="lecture" value="script">script<br>
+        </fieldset>
+
+        <label>check box</label><br>
+        <input type="checkbox" name="lecture1" value="html">
+        <input type="checkbox" name="lecture1" value="css">
+        <input type="checkbox" name="lecture1" value="java">
+        <input type="checkbox" name="lecture1" value="script">
+
+        <label>drop dow list</label><br>
+        <select name="fruit">
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="java">java</option>
+            <option value="script">script</option>
+        </select>
+        
+        <input list="fruits" name="fruit">
+        <datalist id="fruits">
+            <option value="html">html</option>
+            <option value="css">css</option>
+            <option value="java">java</option>
+            <option value="script">script</option>
+        </datalist>
+        <button type="submit">전송</button>
+        <input type="submit" value="전송">
+    </form>
+
+    <form action="#" name="fileform" method="get" enctype="multipart/form-data">
+        <fieldset>
+            <legend>file</legend>
+            <!-- image/* 이미지파일들  -->
+            <input type="file" name="upload" accept="image/*">
+        </fieldset>
+        <button type="submit">전송</button>
+    </form>
+    <form action="#" name="formEtc" method="get">
+        <input type="color" id="fav" name="fav" class="fav" placeholder="컬러픽커"><br>
+        <input type="date" name="dday" placeholder="날짜">
+        <input type="month" name="dmonth" placeholder="날짜 월">
+        <input type="time" name="dtime" placeholder="시간">
+        <input type="week" name="dweek" placeholder="주">
+        <input type="email" name="email" placeholder="이메일 형식체크">
+        <input type="search" name="search" placeholder="검색">
+        <input type="tel" name="telnum" placeholder="***-****-****" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}">
+        <input type="url" name="page" placeholder="url 주소"><br>
+        <!--required == form 보낼때 반드시 채워줘야하게 설정  -->
+        <input type="number" name="num" placeholder="숫자입력" min="1" max="6" step="1" required>
+        <button type="submit">전송</button>
+
+    </form>
+    
+</body>
+</html>
