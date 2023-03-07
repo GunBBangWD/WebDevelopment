@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="description" content="web tutorial">
+    <meta name="keyword" content="html,css">
+    <meta name="author" content="me">
+    <!-- X-UA-Compatible = 호환성보기 (IE=edge) -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- refresh = 새로고침 작업시 5;url=http://www.naver.com 5 초 후 해당 url로 보냄 -->
+    <!-- <meta http-equiv="refresh" content="5;url=http://www.naver.com"> -->
+
+    <!-- viewport = 어느정도 크기로 화면을 보여주는 속성 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <!-- 공통적으로 href 양식 제공 -->
+    <base href="css/">
+
+    <!-- internal (인터널)방식 -->
+    <style>
+        p{color: red;}
+    </style>
+
+    <!-- external (익스터널)방식 -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <!-- inline 방식 (internal 방식보다 우선시됨)-->
+    <div style="background-color: lightgray;">
+        <h1>제목</h1>
+        <p style="color: darkorange;">기이이이이인 문장</p>
+        <!-- 파란색으로 되는 이유 = 위에 코드 순서상 마지막으로 적용된게 external 방식이기때문 -->
+        <p>그 다 아 음 무 운 장</p>
+
+    </div>
+    
+</body>
+</html>
