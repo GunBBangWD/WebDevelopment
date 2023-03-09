@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자</title>
+    <style>
+        h4{color: teal;}
+        /* id 선택자 rgb색상 */
+        #heading{color: rgb(255, 0,0); opacity: 0.1;}
+        /* class 선택자  */
+        .title{color:rgba(255, 0, 0, 0.1);}
+        /*그룹 선택자 hex 색상  */
+        h2,#heading,.title{color: #000000;}
+        /* 전체선택자 hsl hsla  색조(hue), 채도(saturation), 명도(lightness) */
+        *{color: hsl(172, 27%, 61%);}
+        *{color: hwb(199, 20%, 34% , 0.45);}
+    </style>
+</head>
+<body>
+    <h3>선택자를 통한 선택</h3>
+    <h4>해당 부분에 적용</h4>
+    <h4 id="heading">아이디를 통해 적용</h4>
+    <h4 class="title">클래스를 통해 적용</h4>
+    <h2 class="title">클래스를 통해 적용</h2>
+    <h2>그룹 선택자</h2>
+
+</body>
+</html>
