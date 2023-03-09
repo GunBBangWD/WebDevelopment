@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{border: 2px solid black;}
+        table{
+            /* border-collapse: collapse; */
+            border-collapse: separate;
+            border-spacing: 10px 20px;
+            width: 500px;
+            table-layout: fixed;
+            empty-cells: hide;
+            background-color: lightgray;
+            margin: 50px;
+            
+        }
+        th{
+            text-align: left;
+            vertical-align: top;
+            height: 50px;
+        }
+        td{
+            text-align: right;
+            vertical-align: bottom;
+            white-space: nowrap;
+            height: 50px;
+        }
+        caption{caption-side: bottom;}
+        /* table:hover caption{caption-side: top;} */
+        tr:hover{background-color: aqua;}
+        th:hover{
+            background-color: beige;
+            text-align: center;
+            font-size: 2em;
+        
+        }
+        td:hover{
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <h3>테이블 스타일 설정</h3>
+    <table>
+        <caption>선순표</caption>
+        <thead>
+            <tr>
+                <th>이름</th>
+                <th>종목</th>
+                <th>특기</th>
+            </tr>
+        </thead>
+        
+        <tr>
+            <td>손흥민</td>
+            <td>축구</td>
+            <td>드리블드리블드리블드리블드리블드리블</td>
+        </tr>
+        <tr>
+            <td>eeeee</td>
+            <td>fefeffe</td>
+            <td></td>
+
+        </tr>
+    </table>
+    
+</body>
+</html>
