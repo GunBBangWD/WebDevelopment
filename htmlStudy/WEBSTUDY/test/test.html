@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+  
+    ul>li{color: red;}
+    ul>li>ol{color: orange;}
+    ul>li>ol>li{color: blue;}
+    ul>li>ol>li>ol{color: green;}
+    ul>ol{color: aqua;}
+    </style>
+</head>
+<body>
+    <div style="width: 350px;">
+        적용된 style 들 <br>
+        ul>li{color: red;} <br>
+        ul>li>ol{color: orange;} <br>
+        ul>li>ol>li{color: blue;} <br>
+        ul>li>ol>li>ol{color: green;} <br><br>
+
+        ul>ol{color: aqua;} <br>
+    </div>
+    <ul>ul입니다
+        <li>ul의 자손&자식li_1</li>
+        <li>ul의 자손&자식li_1
+            <ol> ul의 자손 & li_1의 자식 ol_1
+                <li>ul의 자손 ol_1의 자식li_2</li>
+                <li>ul의 자손 ol_1의 자식li_2
+                    <ol> ul의 자손 li_2의 자식 ol_2
+                        <li>ul의 자손 ol_2의 자식 li_3</li>
+                    </ol>
+                </li>
+                <li>ul의 자손 ol_1의 자식li_2</li>
+            </ol>
+        </li>
+
+
+        <ol> ul의 자식 ol
+            <li>color의 특성으로 인한 자동 상속 </li>
+            <li>li
+                <ol> ol
+                    <li>lcolor의 특성으로 인한 자동 상속</li>
+                </ol>
+            </li>
+            <li>color의 특성으로 인한 자동 상속</li>
+        </ol>
+
+        <li>ul의 자손&자식li_1</li>
+        <li>ul의 자손&자식li_1</li>
+    </ul>
+
+    <ol> 관련없는 ol
+        <li>관련없는 ol의 자식</li>
+    </ol>
+    
+</body>
+</html>
