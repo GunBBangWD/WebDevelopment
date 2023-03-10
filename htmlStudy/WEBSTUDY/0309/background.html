@@ -6,32 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>배경</title>
     <style>
-        body{
-            height: 5000px;
+        div.background_img{
+            display: inline-block;
+            width: 500px;
+            height: 500px;
             color: red;
             background-color: black;
             background-image: url("image/대화.JPG");
-            background-size: 40px 40px;
+            background-size: 80px 80px;
             background-repeat: no-repeat;
             /* background-repeat: repeat-x; ==가로 줄 전부 체움 */
             /* background-position: top left 기본 설정 */
-            /* background-position: bottom right; */
-            /* background-position: -30px 60px; */
-            background-position: 30% 80px;
-            background-attachment: fixed;
-
+            background-position: bottom right;
+            /* background-position: 100px 60px; */
+            /* background-position: 0% 80px; */
+            /* background-attachment: fixed; */
         }
     </style>
 </head>
 <body>
-    <h1>CSS를 이용한 배경이미지 설정</h1>
-    <p>배경 위의 내용</p>
-    <h3>기본 크기</h3>
-    <div></div>
-    <h3>포함</h3>
-    <div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur facilis iste consequuntur, minima quaerat necessitatibus, harum fugiat illo blanditiis atque voluptatem eius! Reprehenderit voluptatibus laboriosam officia magni quod laudantium?</p>
+    <div class="background_img">
+        <h1>CSS를 이용한 배경이미지 설정</h1>
+        <p>배경 위의 내용</p>
+        <h3>기본 크기</h3>
+        <div></div>
+        <h3>포함</h3>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla consequatur facilis iste consequuntur, minima quaerat necessitatibus, harum fugiat illo blanditiis atque voluptatem eius! Reprehenderit voluptatibus laboriosam officia magni quod laudantium?</p>
+        </div>
     </div>
-    
 </body>
 </html>

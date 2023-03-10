@@ -1,0 +1,20 @@
+#OpinionCSS{width: 400px;}
+/*요소의 첫글자 선택*/
+#OpinionCSS p::first-letter{font-size: 3em;}
+/*요소의 첫줄 선택*/
+#OpinionCSS p::first-line{color:red;}
+/*요소의 앞공간 선택*/
+#OpinionCSS h1::before{
+    content:"HTML!!";
+    color:blue;
+}
+#OpinionCSS h1::after{
+    content:"CSS!!"url("../0307/image/cat.png");
+    color:red; background-color: green;
+}
+#OpinionCSS ::selection{
+    color:red;
+    background-color: yellow;
+}
+
+
