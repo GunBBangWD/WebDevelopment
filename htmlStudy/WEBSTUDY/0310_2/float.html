@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS float</title>
+    <style>
+        #floatCASE{display: inline-block; background-color: lightgreen; width: 500px; height: auto; vertical-align: top;}
+        #floatCASE #img{ margin-left:20px; float:right;}
+        #floatCASE .left{
+            background-color: orange;
+            width: 150px;height: 150px;
+            float:left;
+        }
+        #floatCASE .right{
+            background-color: violet;
+            width: 150px;height: 150px;
+            float: right;
+        }
+        /* float 밑으로 내리고싶다면 밑에 속성 활성화 */
+        /* #para{clear:both;} */
+        #floatCASE div.page{border:3px solid pink;overflow:auto;}
+        #floatCASE h2{text-align: center;}
+        #floatCASE header{border:3px solid sandybrown;}
+        #floatCASE #nav{
+            border:3px solid deeppink;
+            width: 150px;min-height: 150px;
+            float:left;
+            height: 30%;
+        }
+        #floatCASE #section{
+            border:3px solid skyblue;
+            margin-left: 160px;
+            height: 30%;
+        }
+        #floatCASE #footer{border:3px solid lightgreen;}
+
+    </style>
+</head>
+<body>
+    <div id="floatCASE">
+        <h2>float속성을 이용한 위치 설정</h2>
+        <p>
+            <img id="img" src="../test/image/backgroundimage.JPG" alt="카곰"
+                width="250" height="180">
+            상당히 긴 문장, 잘 떠오르지 않아서 쓰는 상당히 긴 문장, 막쓰는 상당히 긴 문장
+        </p>
+        <br><br><br><br><br><br><br>
+        <h3>clear 속성을 이용해 출력문 위치 설정가능</h3>
+        <div>
+            <div class="left">왼쪽으로 위치한 요소</div>
+            <div class="right">오른쪽으로 위치한 요소</div>
+        </div>
+        <p>하단의 문장 출력</p>
+        <p id="para">하단의 문장 출력2</p>
+        <p>하단의 문장 출력3</p>
+        <br><br>
+        <h1>float 속성을 통한 레이아웃(layout)</h1>
+        <div class="page">
+            <header>
+                <h2>header 영역</h2>
+            </header>
+            <nav id="nav">
+                <h2>nav영역</h2>
+                <a>다양한 링크</a>
+                <a>메뉴1</a>
+                <a>menu2</a>
+            </nav>
+            <section id="section">
+                <h2>section area</h2>
+                <p>
+                    여기는 컨텐츠의 내용이 들어가요<br>
+                    상당히 긴 문장, 잘 떠오르지 않아서 쓰는 상당히 긴 문장, 막쓰는 상당히 긴 문장
+                </p>
+            </section>
+            <footer id="footer">
+                <h2>footer area</h2>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

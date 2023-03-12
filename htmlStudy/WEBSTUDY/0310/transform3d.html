@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0;margin: 0;}
+        section{
+            background-color: lightgray;
+            width: 100px;
+            height: 100px;
+            margin: 50px;
+            perspective: 150px;
+            transition: 0.5s;
+        }
+        div{
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+            transition: 0.5s;
+            transform: rotateX(10deg);
+        }
+        .box01{perspective: none;}
+        .box02{perspective: 500px;}
+        .box03{perspective: 200px;}
+
+        .box02:hover{transform: rotateX(200deg);}
+        .box03:hover{transform: rotateX(200deg);}
+    </style>
+</head>
+<body>
+    <h3>te</h3>
+    <section class="box01">
+        <div>none</div>
+    </section>
+    <section class="box02">
+        <div>none</div>
+    </section>
+    <section class="box03">
+        <div>none</div>
+    </section>
+</body>
+</html>

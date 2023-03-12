@@ -1,20 +1,41 @@
-#OpinionCSS{width: 400px;}
+#Descendant{display:inline-block; background-color: lightgoldenrodyellow; width: auto; height: auto;vertical-align: top;}
+#Descendant>ul li{color: red;}
+#Descendant>ul li *{color: black;}
+#child{display:inline-block; background-color: lightgoldenrodyellow; width: auto; height: auto;vertical-align: top;}
+#child>ul>li{color: red;}
+#child>ul>li *{color: black;}
+#NomelSibling{display:inline-block; background-color: lightgoldenrodyellow; width: auto; height: auto;vertical-align: top;}
+#NomelSibling>ul>ol~li{color: red;}
+#Sibling{display:inline-block; background-color: lightgoldenrodyellow; width: auto; height: auto;vertical-align: top;}
+#Sibling>ul>ol+li{color: red;}
+
+
+/* CSS 의사요소 정리 */
+#OpinionCSS{display: inline-block; background-color: lightblue;width: 400px; vertical-align: top;}
 /*요소의 첫글자 선택*/
 #OpinionCSS p::first-letter{font-size: 3em;}
 /*요소의 첫줄 선택*/
 #OpinionCSS p::first-line{color:red;}
 /*요소의 앞공간 선택*/
 #OpinionCSS h1::before{
-    content:"HTML!!";
+    content:"::before로 내용추가";
     color:blue;
 }
 #OpinionCSS h1::after{
-    content:"CSS!!"url("../0307/image/cat.png");
+    content:"::after로 내용 추가"url("../0307/image/cat.png");
     color:red; background-color: green;
 }
+/* 드래그했을대 */
 #OpinionCSS ::selection{
     color:red;
     background-color: yellow;
 }
 
 
+
+
+#child2{display:inline-block; background-color: lightgoldenrodyellow; width: auto; height: auto;}
+#child2>ul>li{color: red; border: 1px solid black}
+
+#Descendant2{display:inline-block; background-color: lightgoldenrodyellow; width: auto; height: auto;}
+#Descendant2>ul li{color: red; border: 1px solid black}

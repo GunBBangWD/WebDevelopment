@@ -6,49 +6,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text</title>
     <style>
-        #p01,#p02{
+        #textOverline{display:inline-block; background-color: lightgoldenrodyellow; width: auto; height: auto;vertical-align: top;}
+        #textOverline>#p01,#p02{
             border: 1px solid black;
             white-space: nowrap;
-            width: 250px;
+            width: 300px;
             overflow: hidden;
         }
-        #p03,#p04,#p05,#p06,#p07,#p08{
+        #textOverline>#p03,#p04,#p05,#p06,#p07,#p08{
             border:1px solid black;
-            width: 130px;
+            width: 200px;
         }
-        #p01{text-overflow: clip;}
-        #p02{text-overflow: ellipsis;}
-        #p01:hover,#p02:hover{overflow: visible;}
-        
-        #p03,#p05{word-wrap: break-word;}
-        #ex1{text-emphasis: filled;}
-        #ex2{text-emphasis: open;}
-        #ex3{text-emphasis: double-circle red;}
-        #ex4{text-emphasis-style: triangle ; 
+        #textOverline>#p01{text-overflow: clip;}
+        #textOverline>#p02{text-overflow: ellipsis;}
+        #textOverline>#p01:hover,#p02:hover{overflow: visible;}
+
+        #textOverline #p03,#p05{word-wrap: break-word;}
+        #textOverline #p04{word-wrap: normal;}
+        #textOverline #ex1{text-emphasis: filled;}
+        #textOverline #ex2{text-emphasis: open;}
+        #textOverline #ex3{text-emphasis: double-circle red;}
+        #textOverline #ex4{text-emphasis-style: triangle ; 
             text-emphasis-color: blue;}
-        #p06{word-wrap: break-word;}
-        #p07{word-break: break-all;}
-        #p08{word-break: keep-all;}
+        #textOverline>#p06{word-break: normal;}
+        #textOverline>#p07{word-break: break-all;}
+        #textOverline>#p08{word-break: keep-all;}
     </style>
 </head>
 <body>
-    <h3>텍스트</h3>    
-    1<p id="p01">contents영역을 벗어난 텍스트 부분을 잘라냅니다.</p>
-    2<p id="p02">contents영역을 벗어난 텍스트 부분을 생략기호로 표시합니다.</p>
-    3<p id="p03">contents영역을 벗어난
-        <span id="ex1">기나긴기나긴기나긴기나긴단어</span>가 표시됩니다.</p>
-    4<p id="p04">contents영역을 벗어난
-        <span id="ex2">기나긴기나긴기나긴기나긴단어</span>
-        wordwordwordwordword가 표시됩니다.</p>
-    5<p id="p05">contents영역을 벗어난
-        <span id="ex3">기나긴기나긴기나긴기나긴단어</span>
-        wordwordwordwordword가 표시됩니다.</p>
-    6<p id="p06">contents영역을 벗어난
-        <span id="ex4">기나긴기나긴기나긴기나긴단어</span>
-        wordwordwordwordword가 표시됩니다.</p>
-    7<p id="p07">contents영역을 벗어난
-        <span id="ex5">기나긴기나긴기나긴기나긴단어</span>
-        wordwordwordwordword가 표시됩니다.</p>
-    8<p id="p08">contents영역을 벗어난 word-word-word-word-word가 표시됩니다.</p>
+    <div id="textOverline">
+        <h3>텍스트</h3>    
+        <p id="p01">text-overflow: clip; 영역을 벗어난 텍스트 부분을 잘라냅니다.</p>
+        <p id="p02">text-overflow: ellipsis; 영역을 벗어난 텍스트 부분을 생략기호로 표시합니다.</p>
+        <p id="p03">word-wrap: break-word; <br> 단어가 벗어났을때 처리
+            <span id="ex1">aaaaaWORD1aaaaaaaaaaaaaaaaaaaaaaaaa</span><br>
+            WORD1 WORD2 WORD3 WORD4 가 표시됩니다.</p>
+        <p id="p04">word-wrap: normal; <br> 단어가 벗어났을때 처리
+            <span id="ex2">aaaaaWORD1aaaaaaaaaaaaaaaaaaaaaaaaa</span><br>
+            WORD1 WORD2 WORD3 WORD4 가 표시됩니다.</p>
+        <p id="p06">word-break: normal; <br> 단어가 벗어났을때 처리
+            <span id="ex4">aaaaaWORD1aaaaaaaaaaaaaaaaaaaaaaaaa</span>
+            WORD1 WORD2 WORD3 WORD4 가 표시됩니다.</p>
+        <p id="p07">word-break: break-all; <br> 단어가 벗어났을때 처리
+            <span id="ex4">aaaaaWORD1aaaaaaaaaaaaaaaaaaaaaaaaa</span>
+            wordwordwordwordword가 표시됩니다.</p>
+        <p id="p08">word-break: keep-all; <br> 단어가 벗어났을때 처리
+            <span id="ex4"> aaaaaWORD1aaaaaaaaaaaaaaaaaaaaaaaaa</span>
+            WORD1 WORD2 WORD3 WORD4 가 표시됩니다.</p>
+    </div>
 </body>
 </html>

@@ -23,15 +23,8 @@
         </div>
     </div>
 
-    <div id="backgroundclip">
-        <h3>클립모양 배경 설정</h3>
-        <p>border-box</p>
-        <div class="a">우리집 앞산</div>
-        <p>padding box</p>
-        <div class="b">우리집 뒷산</div>
-        <p>content box</p>
-        <div class="c">우리집 옆산</div>
-    </div>
+
+
 
     <div id="marginCASE"style="display: inline-block; width: 350px; height: auto;">
         <h3>마진영역 설정</h3>
@@ -41,6 +34,18 @@
         </div>
         <div class="four">margin 속성 4개</div>
         <div class="auto">margin 속성 auto</div>
+    </div>
+
+
+
+    <div id="paddingArea">
+        <h3>패딩 영역 설정</h3>
+        <div>패딩 미설정</div>
+        <div class="pad">네 방향 별개 설정</div><br>
+        <div class="four">패딩 속성값 4개</div><br>
+        <div class="three">패딩 속성값 3개</div><br>
+        <div class="two">패딩 속성값 2개</div><br>
+        <div class="one">패딩 속성값 1개</div><br>
     </div>
 
     <br>
@@ -67,32 +72,52 @@
             <p class="none">none</p>
         </div>
         <div class="border4">
-            <p class="top">top</p>
-            <p class="right">right</p>
-            <p class="left">left</p>
-            <p class="bottom">bottom</p>
+            <pre>
+    border-top-style: solid;
+    border-top-color: blue;
+    border-top-width:3px;
+
+    border-bottom:5px solid red;
+
+    border-left:1em solid green;
+    border-right:1em solid yellow;
+            </pre>
         </div>
         <p class="good">스타일 속성 설정</p>
-        <p class="wrong">스타일 속성 미설정</p>
+        <p class="wrong" style="padding:20px;border:10px dotted whitesmoke;">padding:20px;border:10px dotted whitesmoke; <br>클립모양 설정</p>
 
         <p class="normal">normal</p>
-        <p class="round2">round2</p>
-        <p class="round3">round3</p>
-        <p class="round4">round4</p>
+        <p class="round2">border-radius: 8px;</p>
+        <p class="round3">border-radius: 12px;</p>
+        <p class="round4">border-radius: 30px;</p>
 
         <img src="image/kkoimage.png">
         <p id="p">image border</p>
-
     </div>
+
+
+
+
+    <div id="outlineCASE">
+        <h3>아웃라인 속성 사용 <br>요소들의 크기에 포함되지않음</h3>  
+        <p class="dotted">dotted</p>
+        <p class="dashed">dashed</p>
+        <p class="solid">solid</p>
+        <p class="double">double</p>
+        <p class="groove">groove</p>
+        <p class="ridge">ridge</p>
+        <p class="inset">inset</p>
+        <p class="outset">outset</p>
+        <p class="none">none</p>
+        <p class="hidden">hidden</p>
+    </div>
+
+
 
 
     <div id="displayCASE">
         <h3>디스플레이 속성의 설정</h3>    
-        <ul class="circle">
-            <li><a href="#">HTML</a></li>
-            <li><a href="#">CSS</a></li>
-            <li><a href="#">Java</a></li>
-        </ul>
+        
         <p>아래의 display 속성은 block</p>
         <div class="first">block</div>
         <div class="second">block</div>
@@ -105,7 +130,7 @@
         <div class="first inline-block">inline-block</div>
         <div class="second inline-block">inline-block</div>
         <div class="third inline-block">inline-block</div>
-        <h3>요소 숨기기</h3>
+        <h3>요소 숨기기 none와 hidden 차이</h3>
         <div class="visibility">
             <p>none</p>
             <p class="none">해당 요소는 none 설정</p>
@@ -115,6 +140,49 @@
             <p class="hidden">해당 요소는 hidden 설정</p>
         </div>
     </div> 
+
+
+
+    <div id="floatCASE">
+        <h2>float속성을 이용한 위치 설정</h2>
+        <p>
+            <img id="img" src="../test/image/backgroundimage.JPG" alt="카곰"
+                width="250" height="180">
+            상당히 긴 문장, 잘 떠오르지 않아서 쓰는 상당히 긴 문장, 막쓰는 상당히 긴 문장
+        </p>
+        <br><br><br><br><br><br><br>
+        <h3>clear 속성을 이용해 출력문 위치 설정가능</h3>
+        <div>
+            <div class="left">왼쪽으로 위치한 요소 float:left;</div>
+            <div class="right">오른쪽으로 위치한 요소 float: right;</div>
+        </div>
+        <p>태그상 밑에 있어야하는 문장 출력</p>
+        <p>태그상 밑에 있어야하는 문장 출력</p>
+        <p id="para">clear:both; 태그상 밑에 있어야하는 문장 출력하기위해 속성 설정</p>
+        <br><br>
+        <h1>float 속성을 통한 레이아웃(layout)</h1>
+        <div class="page">
+            <header>
+                <h2>header 영역</h2>
+            </header>
+            <nav id="nav">
+                <h2>nav영역 float:left; 적용</h2>
+                <a>다양한 링크</a>
+                <a>메뉴1</a>
+                <a>menu2</a>
+            </nav>
+            <section id="section">
+                <h2>section area</h2>
+                <p>
+                    여기는 컨텐츠의 내용이 들어가요<br>
+                    상당히 긴 문장, 잘 떠오르지 않아서 쓰는 상당히 긴 문장, 막쓰는 상당히 긴 문장
+                </p>
+            </section>
+            <footer id="footer">
+                <h2>footer area</h2>
+            </footer>
+        </div>
+    </div>
 
     
 

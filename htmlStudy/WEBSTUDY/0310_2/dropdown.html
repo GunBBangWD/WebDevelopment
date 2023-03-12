@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dropdown menu</title>
     <style>
-        /*.dropdown{display:??}*/
+        .dropdown{display:inline-block;}
         .dropdown-btn{
             background-color: antiquewhite;
             padding:10px;font-size: 15px;
@@ -24,28 +24,17 @@
             text-decoration: none;
             padding:8px;
         }
-       
-        .dropdown-btn:hover{
-            background-color: orange;
-        }
-        .dropdown-btn:hover~ .dropdown-content{
-            display: block;
-        }
-        .dropdown-content:hover{
-            display: block;
-        }
-        a:hover{
-            background-color: orange;
-        }
-        a:hover~ .dropdown-btn{
-            background-color: orange;
-        }
-
+        .dropdown:hover .dropdown-content{display:block;}
+        /*.dropdown-btn:hover+.dropdown-content{display:block;}*/
+        .dropdown:hover .dropdown-btn{background-color: orange;}
+        .dropdown-content:hover a:hover{background-color: orange;}
+        /*
+        */
     </style>
 </head>
 <body>
     <h1>드롭다운 메뉴</h1>
-    <div class="dropdown" style="display: inline-block;">
+    <div class="dropdown">
         <button class="dropdown-btn">Dropdown</button>
         <div class="dropdown-content">
             <a href="#">HTML</a>

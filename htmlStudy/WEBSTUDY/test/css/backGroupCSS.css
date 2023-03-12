@@ -32,6 +32,7 @@
 #backgroundclip.b{background-clip: padding-box;}
 #backgroundclip.c{background-clip: content-box;}
 
+/* 마진영역 설정 */
 #marginCASE{display: inline-block; width: 350px; height: auto; background-color: rgb(173, 216, 230,0.5); }
 #marginCASE div{height:3em;background-color: lightgray;
     border:2px solid teal;}
@@ -49,23 +50,19 @@
 #marginCASE div.four{margin:20px 50px 30px 50px;}
 #marginCASE div.auto{width:350px;margin:auto;}
 
-
-/* 디스플레이 모음 */
-#displayCASE{
-    width: 500px; background-color: antiquewhite; height: auto; display:inline-block; vertical-align: top;
+/* 패딩 영역 설정 */
+#paddingArea{display: inline-block; background-color: lightgreen; width: auto; vertical-align: top;}
+#paddingArea div{background-color: skyblue;width: 300px;
+    border:2px solid teal;
+    background-clip: content-box;}
+#paddingArea .pad{
+    padding-top: 10px; padding-right: 20px;
+    padding-bottom: 30px; padding-left: 40px;
 }
-#displayCASE li{display: inline;}
-#displayCASE a{display: block;}
-#displayCASE div:not([class="visibility"]){width:100px;height:50px;}
-#displayCASE .first{background-color: aqua;}
-#displayCASE .second{background-color: green;}
-#displayCASE .third{background-color: yellow;}
-#displayCASE .inline{display: inline;}
-#displayCASE .inline-block{display: inline-block;}
-#displayCASE div.visibility{background-color: ivory;
-        border:2px solid black;}
-#displayCASE .none{display: none;}
-#displayCASE .hidden{visibility: hidden;}
+#paddingArea .four{padding:10px 20px 30px 40px;}
+#paddingArea .three{padding:10px 20px 30px;}
+#paddingArea .two{padding:10px 20px;}
+#paddingArea .one{padding:10px;}
 
 
 /* 테두리 설정 모음 */
@@ -92,8 +89,8 @@
     border-top-color: blue;
     border-top-width:3px;
     border-bottom:5px solid red;
-    border-left:1rem solid green;
-    border-right: 1em solid yellow;
+    border-left:1em solid green;
+    border-right:1em solid yellow;
 }
 #borderCASE .good{border:3px solid teal;}
 #borderCASE .wrong{border:teal 3px;}
@@ -107,6 +104,77 @@ border: 2px solid red;padding:5px;}
 padding:20px; border:20px solid transparent;
 border-image: url('image/kkoimage.png') 10 round stretch;
 }
+
+/* 아웃라인 모음 */
+#outlineCASE{display:inline-block; background-color: lightgoldenrodyellow; width: 300px; height: auto;vertical-align: top;}
+#outlineCASE>p{
+    background-color: lightgreen;
+    border:3px solid black;
+    padding:5px;margin:30px;
+    outline-width: 9px;
+    outline-color: red;
+    outline-offset: 5px;
+}
+#outlineCASE>.dotted{outline-style: dotted;}
+#outlineCASE>.dashed{outline-style: dashed;}
+#outlineCASE>.solid{outline-style: solid;}
+#outlineCASE>.double{outline-style: double;}
+#outlineCASE>.groove{outline-style: groove;}
+#outlineCASE>.ridge{outline-style: ridge;}
+#outlineCASE>.inset{outline-style: inset;}
+#outlineCASE>.outset{outline-style: outset;}
+#outlineCASE>.none{outline-style: none;}
+#outlineCASE>.hidden{outline-style: hidden;}
+
+
+/* 디스플레이 모음 */
+#displayCASE{
+    width: 500px; background-color: antiquewhite; height: auto; display:inline-block; vertical-align: top;
+}
+#displayCASE li{display: inline;}
+#displayCASE a{display: block;}
+#displayCASE div:not([class="visibility"]){width:100px;height:50px;}
+#displayCASE .first{background-color: aqua;}
+#displayCASE .second{background-color: green;}
+#displayCASE .third{background-color: yellow;}
+#displayCASE .inline{display: inline;}
+#displayCASE .inline-block{display: inline-block;}
+#displayCASE div.visibility{background-color: ivory;
+        border:2px solid black;}
+#displayCASE .none{display: none;}
+#displayCASE .hidden{visibility: hidden;}
+
+
+/* float속성 활용 */
+#floatCASE{display: inline-block; background-color: lightgreen; width: 500px; height: auto; vertical-align: top;}
+        #floatCASE #img{ margin-left:20px; float:right;}
+        #floatCASE .left{
+            background-color: orange;
+            width: 150px;height: 150px;
+            float:left;
+        }
+        #floatCASE .right{
+            background-color: violet;
+            width: 150px;height: 150px;
+            float: right;
+        }
+        /* float 밑으로 내리고싶다면 밑에 속성 활성화 */
+        #para{clear:both;}
+        #floatCASE div.page{border:3px solid pink;overflow:auto;}
+        #floatCASE h2{text-align: center;}
+        #floatCASE header{border:3px solid sandybrown;}
+        #floatCASE #nav{
+            border:3px solid deeppink;
+            width: 150px;min-height: 150px;
+            float:left;
+            height: 30%;
+        }
+        #floatCASE #section{
+            border:3px solid skyblue;
+            margin-left: 160px;
+            height: 30%;
+        }
+        #floatCASE #footer{border:3px solid lightgreen;}
 
 
 

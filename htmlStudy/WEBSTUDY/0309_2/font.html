@@ -9,35 +9,44 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet"> -->
     <style>
-        .serif{font-family: 'Times New Roman', Times, serif;}
-        .sanserif{font-family: Arial, Helvetica, sans-serif;}
-        .smallCaps{font-variant: small-caps;}
-        .bold{font-weight: bold;}
-        .bolder{font-weight: 600;}
-        .large{font-size: 2.5em;}
-        .small{font-size: 0.7em;}
-        .fixed{font-size: 20px;}
+        #fontCASE{display:inline-block; background-color: lightgoldenrodyellow; width: 300px; height: auto;vertical-align: top;}
+        #fontCASE .serif{font-family: 'Times New Roman', Times, serif;}
+        #fontCASE .sanserif{font-family: Arial, Helvetica, sans-serif;}
+        #fontCASE .smallCaps{font-variant: small-caps;}
+        #fontCASE .bold{font-weight: bold;}
+        #fontCASE .bolder{font-weight: 600;}
+        #fontCASE .large{font-size: 1.8em;}
+        #fontCASE .small{font-size: 0.7em;}
+        #fontCASE .fixed{font-size: 20px;}
         @font-face {
             font-family: 'temp';
             src: url(font/NotoSansKR-Regular.otf) format('opentype'),
                 url(font/NotoSansKR-Bold.otf) format('opentype');
         }
-        .file{font-family: 'temp';font-weight: bold;}
-        @import url('https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap');
-        .web{font-family: 'Nanum Brush Script', cursive;}
+        #fontCASE .file{font-family: 'temp';font-weight: bold;}
+        #fontCASE .web{font-family: 'Nanum Brush Script';}
     </style>
 </head>
 <body>
-    <h3>font-family 속성이용 글꼴 설정</h3>
-    <p class="serif">Times New Romans 글꼴 가나다라AaBbCcDd</p>
-    <p class="sanserif">Arial 글꼴 가나다라AaBbCcDd</p>
-    <p class="web">웹폰트 적용 가나다라AaBbCcDd</p>
-    <p class="file">파일폰트 적용 가나다라AaBbCcDd</p>
-    <p class="smallCaps">Small Caps Apply</p>
-    <p class="bold">bold 가나다라AaBbCcDd</p>
-    <p class="bolder">bolder 가나다라AaBbCcDd</p>
-    <p class="large">large 2.5em 가나다라AaBbCcDd</p>
-    <p class="small">small 0.7em 가나다라AaBbCcDd</p>
-    <p class="fixed">fixed 20px 가나다라AaBbCcDd</p>
+    <div id="fontCASE">
+        <h3>font-family 속성 여러폰트 적용</h3>
+        <p class="serif">font-family: 'Times New Roman', Times, serif; 글꼴 가나다라AaBbCcDd</p>
+        <p class="sanserif">font-family: Arial, Helvetica, sans-serif; 글꼴 가나다라AaBbCcDd</p>
+        <p class="web">웹폰트 적용 링크 복붙 -> family=???+???+???-> font-family:'??? ??? ???'; 로 적용</p>
+        <p class="file">파일폰트 적용 <br>@font-face {
+            font-family: '폰트 명칭 지정';
+            src: url(폰트파일 위치) format('opentype');
+        }</p> <br>
+        
+        <h3>font 속성이용 폰트 설정</h3>
+        <p class="bold">font-weight: bold; 가나다라AaBbCcDd</p>
+        <p class="bolder">font-weight: 600; 가나다라AaBbCcDd</p>
+        <p class="large">font-size: 1.8em; 가나다라AaBbCcDd</p>
+        <p class="small">font-size: 0.7em; 가나다라AaBbCcDd</p>
+        <p class="fixed">font-size: 20px; 가나다라AaBbCcDd</p>
+<br>
+        <h3>smallCaps 스몰캡스 설정</h3>
+        <p class="smallCaps">font-variant: small-caps; ABCabc소문자를 작은 대문자로 만들어줌</p>
+    </div>
 </body>
 </html>

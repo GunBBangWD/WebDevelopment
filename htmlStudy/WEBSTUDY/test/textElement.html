@@ -1,52 +1,14 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text</title>
-    <style>
-        #textSetting{display:inline-block; background-color: rgb(250, 250, 210,0.7); width: 600px; height: auto;vertical-align: top;}
-        textcolor{color:darkorange;}
-        .rightToLeft{direction:rtl;}
-        .decLetterSpacing{letter-spacing: -6px;}
-        .incLetterSpacing{letter-spacing: 12px;}
-        .decWordSpacing{word-spacing: -10px;}
-        .incWordSpacing{word-spacing: 15px;}
-        .indent{text-indent: 30px;}
-        .left{text-align: left;}
-        .right{text-align: right;}
-        .center{text-align: center;}
-        .overline{
-            text-decoration-style: solid;
-            text-decoration-line: overline;
-            text-decoration-color: blue;
-        }
-        .lineThrough{text-decoration: line-through red solid;}
-        .underline{text-decoration: underline blue wavy;}
-        #allLine{text-decoration: underline overline line-through maroon;}
-        a{text-decoration: none;}
-        .upperCase{text-transform: uppercase;}
-        .lowerCase{text-transform: lowercase;}
-        .capitalize{text-transform: capitalize;}
-        #narrowLineheight{border:1px solid black; line-height: 0.8;}
-        #wideLineheight{border:1px solid black; line-height: 1.8;}
-        #shadow01{text-shadow: 4px 2px;}
-        #shadow02{text-shadow: 4px 2px gray;}
-        #shadow03{text-shadow: 4px 2px 5px;}
-        #shadow04{text-shadow: 0 0 4px red;}
-        #shadow05{
-            color:white;
-            text-shadow: 1px 1px 2px black,
-                        0 0 20px purple,
-                        0 0 5px maroon;
-        }
-        p.a{white-space: nowrap;background-color: lightgray;}
-        p.b{white-space: normal;background-color: lightgray;}
-        p.c{white-space: pre;background-color: lightgray;}
-    </style>
+    <link rel="stylesheet" href="css/textElement.css" type="text/css">
+    <title>Document</title>
 </head>
 <body>
+
     <div id="textSetting">
         <h1>CSS를 이용한 텍스트 설정</h1>
         <textcolor>글자의 색 color:orange;</textcolor>
@@ -104,5 +66,49 @@
             내가 가진 게 많겠니     
         </p>
     </div>
+
+    <div id="textOverline">
+        <h3>텍스트가 content 범위 넘어갈때 처리 </h3>    
+        <p id="p01">text-overflow: clip; 영역을 벗어난 텍스트 부분을 잘라냅니다.</p>
+        <p id="p02">text-overflow: ellipsis; 영역을 벗어난 텍스트 부분을 생략기호로 표시합니다.</p>
+        <p id="p03">word-wrap: break-word; <br> 단어가 벗어났을때 처리
+            <span id="ex1">aaaaaWORD1aaaaaaaaaaaaaaaaaaaaaaaaa</span><br>
+            WORD1 WORD2 WORD3 WORD4 가 표시됩니다.</p>
+        <p id="p04">word-wrap: normal; <br> 단어가 벗어났을때 처리
+            <span id="ex2">aaaaaWORD1aaaaaaaaaaaaaaaaaaaaaaaaa</span><br>
+            WORD1 WORD2 WORD3 WORD4 가 표시됩니다.</p>
+        <p id="p06">word-break: normal; <br> 단어가 벗어났을때 처리
+            <span id="ex4">aaaaaWORD1aaaaaaaaaaaaaaaaaaaaaaaaa</span>
+            WORD1 WORD2 WORD3 WORD4 가 표시됩니다.</p>
+        <p id="p07">word-break: break-all; <br> 단어가 벗어났을때 처리
+            <span id="ex4">aaaaaWORD1aaaaaaaaaaaaaaaaaaaaaaaaa</span>
+            wordwordwordwordword가 표시됩니다.</p>
+        <p id="p08">word-break: keep-all; <br> 단어가 벗어났을때 처리
+            <span id="ex4"> aaaaaWORD1aaaaaaaaaaaaaaaaaaaaaaaaa</span>
+            WORD1 WORD2 WORD3 WORD4 가 표시됩니다.</p>
+    </div>
+
+
+    <div id="fontCASE">
+        <h3>font-family 속성 여러폰트 적용</h3>
+        <p class="serif">font-family: 'Times New Roman', Times, serif; 글꼴 가나다라AaBbCcDd</p>
+        <p class="sanserif">font-family: Arial, Helvetica, sans-serif; 글꼴 가나다라AaBbCcDd</p>
+        <p class="web">웹폰트 적용 링크 복붙 -> family=???+???+???-> font-family:'??? ??? ???'; 로 적용</p>
+        <p class="file">파일폰트 적용 <br>@font-face {
+            font-family: '폰트 명칭 지정';
+            src: url(폰트파일 위치) format('opentype');
+        }</p> <br>
+        
+        <h3>font 속성이용 폰트 설정</h3>
+        <p class="bold">font-weight: bold; 가나다라AaBbCcDd</p>
+        <p class="bolder">font-weight: 600; 가나다라AaBbCcDd</p>
+        <p class="large">font-size: 1.8em; 가나다라AaBbCcDd</p>
+        <p class="small">font-size: 0.7em; 가나다라AaBbCcDd</p>
+        <p class="fixed">font-size: 20px; 가나다라AaBbCcDd</p>
+<br>
+        <h3>smallCaps 스몰캡스 설정</h3>
+        <p class="smallCaps">font-variant: small-caps; ABCabc소문자를 작은 대문자로 만들어줌</p>
+    </div>
+    
 </body>
 </html>

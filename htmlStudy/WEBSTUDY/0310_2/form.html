@@ -11,27 +11,18 @@
             padding:10px 20px;
             margin:5px 0;
             box-sizing: border-box;
+            border:none;
             color:darkblue;
         }
-        /*input:focus{??}*/
-        #username{border:2px solid red;
-            border-radius: 8px;        
-        }
+        input:focus{outline:none;}
+        #username{border:2px solid red; border-radius: 8px;}
         #username:focus{border-color: violet;}
-        input[type="password"]{border-bottom: 2px solid orange;
-            border-top:none;
-            border-left:none;
-            border-right:none;
-
-        }
+        input[type="password"]{border-bottom: 2px solid orange;}
         input[type="password"]:focus{border-bottom-color: burlywood;}
         legend{
             background-color: aqua;
             font-weight: bold;
-            text-decoration-style: solid;
-            text-decoration-line: underline;
-            text-decoration-color: black;
-            
+            text-decoration: underline;
         }
         textarea{
             width: 100%;
@@ -42,13 +33,12 @@
             font-size: 15px;
             resize:both;
             outline: none;
+            border-radius: 5px;
         }
         select{
             background-color: aqua;
             font-weight: bold;
-            text-decoration-style: solid;
-            text-decoration-line: underline;
-            text-decoration-color: black;
+            text-decoration: underline;
         }
     </style>
 </head>

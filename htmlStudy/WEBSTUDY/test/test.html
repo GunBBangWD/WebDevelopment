@@ -7,55 +7,82 @@
     <title>Document</title>
     <style>
   
-    ul>li{color: red;}
-    ul>li>ol{color: orange;}
-    ul>li>ol>li{color: blue;}
-    ul>li>ol>li>ol{color: green;}
-    ul>ol{color: aqua;}
+    #Descendant>ul li{color: red; border: 1px solid black}
+    #child>ul>li{color: red; border: 1px solid black;}
+
     </style>
 </head>
 <body>
-    <div style="width: 350px;">
-        적용된 style 들 <br>
-        ul>li{color: red;} <br>
-        ul>li>ol{color: orange;} <br>
-        ul>li>ol>li{color: blue;} <br>
-        ul>li>ol>li>ol{color: green;} <br><br>
+    <div id="child" style="display:inline-block; background-color: lightgoldenrodyellow; width: auto; height: auto;">
+        <h3>child 자식('>')으로 적용 <br>ul>li{color: red; border: 1px solid black;}</h3>
 
-        ul>ol{color: aqua;} <br>
-    </div>
-    <ul>ul입니다
-        <li>ul의 자손&자식li_1</li>
-        <li>ul의 자손&자식li_1
-            <ol> ul의 자손 & li_1의 자식 ol_1
-                <li>ul의 자손 ol_1의 자식li_2</li>
-                <li>ul의 자손 ol_1의 자식li_2
-                    <ol> ul의 자손 li_2의 자식 ol_2
-                        <li>ul의 자손 ol_2의 자식 li_3</li>
-                    </ol>
-                </li>
-                <li>ul의 자손 ol_1의 자식li_2</li>
-            </ol>
-        </li>
-
-
-        <ol> ul의 자식 ol
-            <li>color의 특성으로 인한 자동 상속 </li>
-            <li>li
-                <ol> ol
-                    <li>lcolor의 특성으로 인한 자동 상속</li>
+        <ul>ul입니다
+            <li>ul의 자손&자식li_1</li>
+            <li>ul의 자손&자식li_1
+                <ol> li_1의 자손&자식 ul의 자손 ol_1
+                    <li>ol_1의 자손&자식 li_1의 자손 li_2</li>
+                    <li>ol_1의 자손&자식 li_1의 자손 li_2
+                        <ol>li_2의 자손&자식 ol_1의 자손 ol_2
+                            <li>ol_2의 자손&자식 li_2의 자손 li_3</li>
+                        </ol>
+                    </li>
+                    <li>ol_1의 자손&자식 li_1의 자손 li_2</li>
                 </ol>
             </li>
-            <li>color의 특성으로 인한 자동 상속</li>
+            <br>
+            <ol> ul의 자손&자식 ol
+                <li>ul의 자손 li_d </li>
+                <li>ul의 자손 li_d
+                <ol> ol
+                    <li>li</li>
+                </ol>
+                </li>
+                <li>ul의 자손 li_d</li>
+            </ol>
+
+            <li>ul의 자손&자식li_1</li>
+            <li>ul의 자손&자식li_1</li>
+        </ul>
+
+        <ol> 관련없는 ol
+            <li>관련없는 ol의 li</li>
         </ol>
+    </div>
 
-        <li>ul의 자손&자식li_1</li>
-        <li>ul의 자손&자식li_1</li>
-    </ul>
+    <div id="Descendant" style="display:inline-block; background-color: lightgoldenrodyellow; width: auto; height: auto;">
+        <h3>Descendant 자손(' ')으로 적용 <br>ul li{color: red; border: 1px solid black;}</h3>
+        <ul>ul입니다
+            <li>ul의 자손&자식li_1</li>
+            <li>ul의 자손&자식li_1
+                <ol> li_1의 자손&자식 ul의 자손 ol_1
+                    <li>ol_1의 자손&자식 li_1의 자손 li_2</li>
+                    <li>ol_1의 자손&자식 li_1의 자손 li_2
+                        <ol>li_2의 자손&자식 ol_1의 자손 ol_2
+                            <li>ol_2의 자손&자식 li_2의 자손 li_3</li>
+                        </ol>
+                    </li>
+                    <li>ol_1의 자손&자식 li_1의 자손 li_2</li>
+                </ol>
+            </li>
+            <br>
+            <ol> ul의 자손&자식 ol
+                <li>ul의 자손 li_d </li>
+                <li>ul의 자손 li_d
+                <ol> ol
+                    <li>li</li>
+                </ol>
+                </li>
+                <li>ul의 자손 li_d</li>
+            </ol>
 
-    <ol> 관련없는 ol
-        <li>관련없는 ol의 자식</li>
-    </ol>
+            <li>ul의 자손&자식li_1</li>
+            <li>ul의 자손&자식li_1</li>
+        </ul>
+
+        <ol> 관련없는 ol
+            <li>관련없는 ol의 li</li>
+        </ol>
+    </div>
     
 </body>
 </html>
