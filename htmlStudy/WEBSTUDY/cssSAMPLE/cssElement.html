@@ -55,7 +55,7 @@
     </div>
     
     <div id="Sibling">
-        <h3>Sibling 동위선택자('~')으로 적용 <br>ul>ol~li{color: red;}</h3>
+        <h3>Sibling 동위선택자('+')으로 적용 <br>ul>ol+li{color: red;}</h3>
         <ul>ul입니다
             <li>ul의 자손&자식li</li>
             <li>ul의 자손&자식li</li>
@@ -168,6 +168,36 @@
         <ol> 관련없는 ol
             <li>관련없는 ol의 li</li>
         </ol>
+    </div>
+
+    <div id="stateSelect">
+        <h3>링크 선택자 link, visited, hover, active 로 속성변경</h3>
+        <p><a href="#">이동</a></p>
+        <h3>hover 를 사용하여 속성 변경</h3>
+        <div id="hover">링크 선택자를 이용한 버튼 <br> #hover:hover <br>{background-color:blue;color:white;}</div>
+        <br>
+        <h3>input 요소 focus시 속성 설정</h3>
+        <form id="focus">
+            아래 입력 양식 클릭<br>
+            <input type="text" placeholder="input:focus  {border:4px solid orange;}">
+        </form>
+        <br>
+        <h3>input 요소 enabled, disbled, checked 별 속성 설정</h3>
+        <form name="checked">
+            <input type="radio" value="html" name="lecture" checked>
+            <span>input:enabled+span 로 속성 변경 span 1번</span><br>
+            <input type="radio" value="css" name="lecture">
+            <span>input:enabled+span 로 속성 변경 span 2번</span><br>
+            <input type="radio" value="java" name="lecture" disabled>
+            <span>input:disabled+span 로 속성 변경 span 3번</span><br>
+            <hr>
+            <input type="checkbox" value="html" name="lecture" checked>
+            <span>input:enabled+span 로 속성 변경 span 1번</span><br>
+            <input type="checkbox" value="css" name="lecture">
+            <span>input:enabled+span 로 속성 변경 span 2번</span><br>
+            <input type="checkbox" value="java" name="lecture" disabled>
+            <span>input:disabled+span 로 속성 변경 span 3번</span><br>
+        </form>
     </div>
     
 
