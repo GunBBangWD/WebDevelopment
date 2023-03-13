@@ -43,6 +43,35 @@
         .dropdown-content:hover a:hover{background-color: orange;}
         /*
         */
+
+        #navbar{display: inline-block; width: 350px; height: auto; background-color: rgb(173, 216, 230,0.5); }
+        #navbar ul{
+            background-color: antiquewhite;
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow: hidden;
+        }
+        #navbar li{
+            float:left;
+            border:1px solid white;
+        }
+        #navbar li a{
+            display: block;
+            text-decoration: none;
+            background-color: antiquewhite;
+            color:black;
+            font-weight: bold;
+            padding:8px;
+        }
+        #navbar .login{
+            float:right;
+        }
+        #navbar .current{background-color: orange;color:white;}
+        #navbar a:hover:not(.login){
+            background-color: cyan;
+            color:white;
+        }
     </style>
         
       </style>
@@ -77,6 +106,20 @@
             <a href="#">CSS</a>
             <a href="#">JAVA</a>
         </div>
+    </div>
+<br>
+
+    <div id="navbar">
+        <h1>네비게이션 바</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">HTML</a></li>
+            <li><a href="#" class="current">CSS</a></li>
+            <ul class="login">
+                <li><a href="#" class="login">로그인</a></li>
+                <li><a href="#" class="login">회원가입</a></li>
+            </ul>
+        </ul>
     </div>
     
 </body>
