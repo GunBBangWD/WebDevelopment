@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const arr = [1, 2, 3, 4, 5, 6]
+        // 3종류의 초기화방식
+        // const arr = Array(1, 2, 3, 4, 5, 6)
+        // const arr = new Array(1, 2, 3, 4, 5, 6)
+        const reference1 = arr // 배열의 주소(reference1)를 받음
+        const arr2 = Array.from(arr) // 배열의 값(Value)을 받음
+        arr2[0] = 5
+        // 배열을 객체 취급하므로 const일지라도 배열 요소들의 값은 바꿀수있다
+        // const reference1 = arr2  에러
+        arr[0] = 6
+        
+        document.write(reference1) //[ 6, 2, 3, 4, 5, 6 ]
+        document.write("<br>")
+        document.write(arr2) // [ 5, 2, 3, 4, 5, 6 ]
+        document.write("<br>")
+        document.write(arr) // [ 6, 2, 3, 4, 5, 6 ]
+        document.write("<br>")
+        document.write("<br>")
+
+
+        document.write(Array.isArray(arr)) 
+        // 출력:true  해당 요소가 배열인지 확인 arr=[ 6, 2, 3, 4, 5, 6 ]
+        document.write("<br>")
+        document.write(arr.indexOf(3)) 
+        // 출력 2  값이 3의 위치 index = 2  arr=[ 6, 2, 3, 4, 5, 6 ]
+        document.write("<br>")
+        document.write(arr.includes(1)) 
+        //출력 false  배열에 값이 1인 요소가 없음 arr=[ 6, 2, 3, 4, 5, 6 ]
+        document.write("<br>")
+        document.write(arr.push("push"))
+        //출력 7 배열 마지막에 요소 추가, 길이 반환 arr=[ 6, 2, 3, 4, 5, 6,push ]
+        document.write("<br>")
+        document.write(arr.unshift("unshift"))
+        //출력 8 배열 마지막에 요소 추가, 길이 반환 arr=[ unshift,6, 2, 3, 4, 5, 6, push ]
+        document.write("<br>")
+        document.write("<br>")
+        document.write(arr.pop())
+        //출력 push 배열 맨 뒤에 요소를 제거 (배열 자체를 수정하고 제거된 요소를반환) arr=[ unshift,6, 2, 3, 4, 5, 6,]
+        document.write("<br>")
+        document.write(arr.shift())
+        //출력 unshift 배열 맨 앞의 요소를 제거(배열 자체를 수정하고 제거된 요소를 반환) arr=[ 6, 2, 3, 4, 5, 6,]
+        document.write("<br>")
+        document.write(arr.splice(1,2,"splice1","splice2","splice3"))
+        //출력 [2,3] 배열 특정 위치(1번째 인자 교체 시작지점 2번째 끝지점 3번째 인자부터 교체될 요소들) 요소를 교체 
+        //(배열 자체를 수정하고 제거된요소를 배열 형태로 반환) arr=[ 6, splice1, splice2, "splice3", 4, 5, 6,]
+        document.write("<br>")
+        document.write(arr.slice(1,4))
+        //출력 [ splice1, splice2, splice3 ] 
+        //잘라진 새로운 배열을 만듬 (배열 자체는 유지하고새로운배열을 반환)
+        document.write("<br>")
+        let testArea = ["concat1","concat2"]
+        document.write(arr.concat(testArea))
+        //출력 [ 6, splice1, splice2, splice3, 4, 5, 6, concat1, concat2 ]
+        //여러개의 배열을 연결 (배열 자체는 유지하고 새로운배열을 반환)
+        document.write("<br>")
+        document.write(arr.sort())
+        //출력 [ 4, 5, 6, 6, splice1, splice2, splice3 ]
+        //배열의 요소를 적절하게 정렬
+        //!!! 원본 배열을 직접 변경하며정렬된 배열을 반환 !!!!
+        document.write("<br>")
+        document.write(arr.reverse())
+        //출력 [ splice3, splice2, splice1, 6, 6, 5, 4 ]
+        //배열 요소의 순서를 거꾸로 배치 
+        //!!! 배열 자체를 수정하고변경된 요소를 배열 형태로 반환 !!!
+        document.write("<br>")
+        //arr2 = [ 5, 2, 3, 4, 5, 6 ]
+        arr.push(arr2)
+        //arr = [ splice3, splice2, splice1, 6, 6, 5, 4, [ 5, 2, 3, 4, 5, 6 ] ]
+        document.write(arr.flat())
+        //출력 [ splice3, splice2, splice1, 6, 6, 5, 4, 5, 2, 3, 4, 5, 6 ]
+        //중첩 배열을 하나의 배열로 평탄화 (배열 자체는 유지하고새로운 배열을 반환)
+        //arr = [ splice3, splice2, splice1, 6, 6, 5, 4, [ 5, 2, 3, 4, 5, 6 ] ]
+        document.write("<br>")
+        document.write(arr.fill("fill"))
+        //출력 [ fill, fill, fill, fill, fill, fill, fill, fill ]
+        //특정한 값으로 배열을 채우기 (배열자체를수정하고 변경된 요소를 배열 형태로 반환)
+        //arr = [ fill, fill, fill, fill, fill, fill, fill, fill ]
+        document.write("<br>")
+        document.write(arr.join("join"))
+        //출력 "filljoinfilljoinfilljoinfilljoinfilljoinfilljoinfilljoinfill"
+        //배열을 문자열로 변환 (배열 자체는유지하고새로운 배열을 반환)
+        //arr = [ fill, fill, fill, fill, fill, fill, fill, fill ]
+        document.write("<br>")
+   
+    </script>
+
+
+
+</body>
+
+</html>
