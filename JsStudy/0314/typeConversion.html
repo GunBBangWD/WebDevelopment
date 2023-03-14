@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let num
+        num=20
+        console.log(num)
+
+        num="이십"
+        console.log(num)
+
+        let res = 10+"문자열"
+        console.log(res)
+        res = "10"*"4"
+        console.log(res)
+        // 명시적
+        console.log(Number("200"))
+        console.log(String(true))
+        console.log(true)
+        console.log(Boolean(0))
+        console.log(Object(11))
+        console.log(parseInt("2.235"))
+        console.log(parseFloat("3.1234"))
+
+        test=function(){
+            console.log('test');
+        }
+
+        test()
+
+        // let 변수는 재선언 불가
+        // let num
+        
+        ha()
+        function ha(){
+            //함수 안에서의 선언은 지역변수이기때문에 가능
+            let num=123;
+            console.log(num);
+        }
+    </script>
+    
+</body>
+</html>
