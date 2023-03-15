@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prototype</title>
+</head>
+<body>
+    <script>
+        function Dog(name,color,age,gender){
+            this.name=name;
+            this.color=color;
+            this.age=age;
+            this.gender=gender;
+        }
+        console.log(Dog,Dog.prototype);
+        Dog.prototype.family='시추';
+        Dog.prototype.name2='시추';
+        Dog.prototype.breed=function(){
+            return this.name+" "+this.age+" "+this.family;
+        };
+        console.log(Dog,Dog.prototype);
+        /* 필드 메소드 하나씩 추가된 것들 확인 */
+        let pet= new Dog("댕댕이","검은색",2,"수컷");
+        let pet2=new Dog
+
+    </script>
+</body>
+</html>

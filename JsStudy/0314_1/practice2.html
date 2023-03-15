@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+</head>
+<body>
+    <h4>사각형</h4>
+    <script>
+        let repeat=5;
+        for(let row=0;row<repeat;row++){
+            for(let col=0;col<repeat;col++){
+                document.write('*');
+            }
+            document.write("<br>");
+        }
+    </script>
+    <h4>삼각형</h4>
+   
+
+    
+    <script>
+        document.write("<br>");
+       let kt=1;
+       for(let i=4;i>=0;i--){
+        for(let j=i;j>=1;j--){
+            document.write("&nbsp");
+        }
+        for(let k=1;k<=kt;k++){
+            document.write("*");
+        }
+        document.write("<br>");
+        kt+=2;
+       }
+       document.write("<br>");
+       document.write("<br>");
+
+       for(let i=4;i>=-4;i--){
+        for(let j=0;j<=4-Math.abs(i);j++){
+            document.write("&nbsp");
+        }
+        for(let k=0;k<Math.abs(i)*2+1;k++){ 
+            document.write("*");
+        }
+        document.write("<br>");
+       }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
