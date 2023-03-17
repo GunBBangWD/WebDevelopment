@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <strong id="message"></strong>
+    <div class="container">
+        <button id="btn1">숨기기1</button>
+        <button id="btn2">숨기기2</button>
+    </div>
+    <a href="http://www.naver.com">네이버</a>
+    <form>
+        <label for="chkbox">체크박스</label>
+        <input type="checkbox" id="chkbox">
+    </form>
+    <script>
+        const link=document.querySelector('a')
+        link.addEventListener('click',function(event){
+            console.log("click event", event)
+            event.preventDefault()
+        })
+
+        const container=document.querySelector(".container")
+        function hide(e){
+            console.log(e);
+            e.target.style.visibility="hidden"
+            console.log(this)
+            console.log(e.target)
+            console.log(e.currentTarget)
+            console.log(e.type)
+
+        }
+        container.addEventListener("click",hi)
+    </script>
+    
+</body>
+</html>
