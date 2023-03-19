@@ -20,43 +20,41 @@
     <script>
         const link=document.querySelector('a');
         link.addEventListener('click',function(event){
-            console.log('click event',event);
-            console.log(event.cancelable);
-            event.preventDefault();
-        });
-        const chkbox=document.querySelector('#chkbox');
+           event.preventDefault()
+        })
+
+        const chkbox=document.querySelector('#chkbox')
         chkbox.addEventListener('click',function(e){
-            msg.innerHTML+='<code>preventDefault()</code><br>';
-            e.preventDefault();
-        });
-        const msg=document.querySelector('#message');
-        const body=document.querySelector('body');
+        //이벤트가 의 기본동작이 처리되지 않게 해주는 역할 체크박스는 체크가 안됨
+           e.preventDefault() 
+        })
+        const msg=document.querySelector('#message')
+        const body=document.querySelector('body')
+        //이벤트 처리 메스드
         function showType(e){
-            console.log(e);
-            e.preventDefault();
-            msg.innerHTML=e.type+':'+e.keyCode;
+            console.log(e)
+            e.preventDefault()
+            msg.innerHTML=e.type+':'+e.keyCode
         }
-        body.addEventListener('keydown',showType);
-        body.addEventListener('keyup',showType);
+        //body 태그에 키보드 눌렸을때 땠을때 이벤트 처리
+        body.addEventListener('keydown',showType)
+        body.addEventListener('keyup',showType)
         
-        const container=document.querySelector('.container');
+        const container=document.querySelector('.container')
         function hide(e){
-            console.log(e);
-            e.target.style.visibility='hidden';
-            console.log(this);
-            console.log(e.target);
-            console.log(e.currentTarget);
-            console.log(e.type);
+            e.target.style.visibility='hidden'
         }
-        container.addEventListener('click',hide);
+        //container 클래스를 갖는 요소, 안의 요소가 클릭되면 해당 요소 숨김
+        container.addEventListener('click',hide)
 
         function printCoord(e,out){
-            console.log(e);
-            out.innerHTML='x:'+e.clientX+' y:'+e.clientY;
+            // out.innerHTML+='x:'+e.clientX+' y:'+e.clientY
         }
+        //클릭 이벤트 발생시 이벤트 처리 부분에서 객체를 받아서 처리도 가능하다
         addEventListener('click',function(e){
-            printCoord(e,msg);
+            printCoord(e,msg)
         });
     </script>
 </body>
 </html>
+ <!-- ------이벤트 객체를 활용하여 디테일하게 이벤트 처리----------------->
