@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script></script>
+</head>
+<body>
+    <h1>session storage</h1>
+    <div id="counter">1</div>
+    <p>
+        <button type="button">
+        count
+        </button>
+    </p>
+
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $(function(){
+            $("button").on({
+                click: function(){
+                    let con = $("#counter")
+                    console.log(con)
+                    if(typeof(Storage)!=='undefined'){
+                        if(sessionStorage.click){
+                            sessionStorage.click=Number(sessionStorage.click)+1
+                        }else{
+                            sessionStorage.click=1
+                        }
+                        con.html(`현재 카운트: ${sessionStorage.click}`)
+                    }else{
+                        con.html('Web Storage API미지원')
+                    }  
+                }
+            });
+        });
+
+
+
+
+
+        // function clickCounter(){
+        //     let counter=document.getElementById('counter')
+        //     if(typeof(Storage)!=="undefined"){
+        //         if(sessionStorage.clickCounter){
+        //             sessionStorage.clickCounter=Number(sessionStorage.clickCounter)+1
+        //         }else{
+        //             sessionStorage.clickCounter=1
+        //         }
+        //         counter.innerHTML=`현재 카운트: ${sessionStorage.clickCounter}`
+        //     }else{
+        //         counter.innerHTML='Web Storage API 미지원'
+        //     }
+        // }
+       
+        
+    </script>
+    
+</body>
+</html>

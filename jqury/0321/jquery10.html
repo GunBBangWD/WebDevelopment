@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jquery</title>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+</head>
+<body>
+    <ul class="lvl1">
+        <li class="i1">I</li>
+        <li class="i2">II
+            <ul class="lvl2">                
+                <li class="ia">A</li>
+                <li class="ib">B
+                    <ul class="lvl3">
+                        <li class="ix">x</li>
+                        <li class="iy">y</li>
+                        <li class="iz">z</li>
+                    </ul>
+                </li>
+                <li class="ic">C</li>
+            </ul>
+        </li>
+        <li class="i3">III</li>
+    </ul>
+<script>
+    //조상 자손 관계
+    //parent() parents() parentUntil()
+    //find() children()
+
+    //인자 없으면 1단계 자식 전부 선택
+    // $('ul.lvl2').children().css('border','1px solid black');
+    //요소 1단계 부모중에서 선택
+    // $('li.ia').parent('ul').css('border','1px solid black');
+    //객체의 자식부터 해당 요소 전부 선택
+    // $('li.i2').find('li').css('border','1px solid black');
+    // 객체부터 지정된 곳까지 모든 요소 선택
+    // $('.ix').parentsUntil('.lvl1').css('border','1px solid black');
+    //근접 관계 
+    $('li.ia').closest('ul').css('border','1px solid black');
+    console.log($('li.ia').closest('ul'));
+    // $('.ia').next().css('border','1px solid black');
+    // $('.ia').nextAll().css('border','1px solid black');
+    console.log($('.ia').next(),$('.ia').nextAll());
+</script>
+</body>
+</html>

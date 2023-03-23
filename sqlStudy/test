@@ -1,0 +1,298 @@
+
+Table EMP_DDL이(가) 생성되었습니다.
+
+
+Table EMP_DDL이(가) 삭제되었습니다.
+
+
+Table EMP_DDL이(가) 생성되었습니다.
+
+
+명령의 8 행에서 시작하는 중 오류 발생 -
+CREATE TABLE EMP_DDL(
+    EMPNO NUMBER(4),
+    ENAME VARCHAR2(10),
+    JOB VARCHAR2(9),
+    MGR NUMBER(4),
+    HIREDATE DATE,
+    SAL NUMBER(7,2),
+    COM NUMBER(7,2),
+    DEPTNO NUMBER(2)
+)
+오류 보고 -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Table EMP_DDL이(가) 삭제되었습니다.
+
+
+명령의 6 행에서 시작하는 중 오류 발생 -
+drop table EMP_DDL
+오류 보고 -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+Table EMP_DDL이(가) 생성되었습니다.
+
+
+명령의 8 행에서 시작하는 중 오류 발생 -
+CREATE TABLE EMP_DDL(
+    EMPNO NUMBER(4),
+    ENAME VARCHAR2(10),
+    JOB VARCHAR2(9),
+    MGR NUMBER(4),
+    HIREDATE DATE,
+    SAL NUMBER(7,2),
+    COM NUMBER(7,2),
+    DEPTNO NUMBER(2)
+)
+오류 보고 -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+이름       널? 유형           
+-------- -- ------------ 
+EMPNO       NUMBER(4)    
+ENAME       VARCHAR2(10) 
+JOB         VARCHAR2(9)  
+MGR         NUMBER(4)    
+HIREDATE    DATE         
+SAL         NUMBER(7,2)  
+COM         NUMBER(7,2)  
+DEPTNO      NUMBER(2)    
+
+명령의 20 행에서 시작하는 중 오류 발생 -
+drop table dept_ddl
+오류 보고 -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+명령의 21 행에서 시작하는 중 오류 발생 -
+create table dept_ddl as select * from deft
+오류 보고 -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+명령의 21 행에서 시작하는 중 오류 발생 -
+create table dept_ddl as select * from deft_ddl
+오류 보고 -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+명령의 21 행에서 시작하는 중 오류 발생 -
+create table dept_ddl as select * from deft_ddl
+오류 보고 -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+명령의 21 행에서 시작하는 중 오류 발생 -
+create table dept_ddl as select * from deft
+오류 보고 -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+명령의 21 행에서 시작하는 중 오류 발생 -
+create table dept_ddl
+오류 보고 -
+ORA-00906: missing left parenthesis
+00906. 00000 -  "missing left parenthesis"
+*Cause:    
+*Action:
+
+오류:
+ORA-04043: dept_ddl 객체가 존재하지 않습니다.
+
+명령의 8 행에서 시작하는 중 오류 발생 -
+CREATE TABLE EMP_DDL(
+    EMPNO NUMBER(4),
+    ENAME VARCHAR2(10),
+    JOB VARCHAR2(9),
+    MGR NUMBER(4),
+    HIREDATE DATE,
+    SAL NUMBER(7,2),
+    COM NUMBER(7,2),
+    DEPTNO NUMBER(2)
+)
+오류 보고 -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+명령의 8 행에서 시작하는 중 오류 발생 -
+CREATE TABLE EMP_DDL(
+    EMPNO NUMBER(4),
+    ENAME VARCHAR2(10),
+    JOB VARCHAR2(9),
+    MGR NUMBER(4),
+    HIREDATE DATE,
+    SAL NUMBER(7,2),
+    COM NUMBER(7,2),
+    DEPTNO NUMBER(2)
+)
+오류 보고 -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+명령의 21 행에서 시작하는 중 오류 발생 -
+create table dept_ddl
+오류 보고 -
+ORA-00906: missing left parenthesis
+00906. 00000 -  "missing left parenthesis"
+*Cause:    
+*Action:
+
+오류:
+ORA-04043: salgrade_ddl 객체가 존재하지 않습니다.
+
+명령의 7 행에서 시작하는 중 오류 발생 -
+CREATE TABLE EMP_DDL(
+    EMPNO NUMBER(4),
+    ENAME VARCHAR2(10),
+    JOB VARCHAR2(9),
+    MGR NUMBER(4),
+    HIREDATE DATE,
+    SAL NUMBER(7,2),
+    COM NUMBER(7,2),
+    DEPTNO NUMBER(2)
+)
+오류 보고 -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+명령의 7 행에서 시작하는 중 오류 발생 -
+CREATE TABLE EMP_DDL(
+    EMPNO NUMBER(4),
+    ENAME VARCHAR2(10),
+    JOB VARCHAR2(9),
+    MGR NUMBER(4),
+    HIREDATE DATE,
+    SAL NUMBER(7,2),
+    COM NUMBER(7,2),
+    DEPTNO NUMBER(2)
+)
+오류 보고 -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Table EMP_DDL이(가) 삭제되었습니다.
+
+
+Table EMP_DDL이(가) 생성되었습니다.
+
+
+명령의 7 행에서 시작하는 중 오류 발생 -
+CREATE TABLE EMP_DDL(
+    EMPNO NUMBER(4),
+    ENAME VARCHAR2(10),
+    JOB VARCHAR2(9),
+    MGR NUMBER(4),
+    HIREDATE DATE,
+    SAL NUMBER(7,2),
+    COM NUMBER(7,2),
+    DEPTNO NUMBER(2)
+)
+오류 보고 -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+명령의 20 행에서 시작하는 중 오류 발생 -
+create table dept_ddl
+오류 보고 -
+ORA-00906: missing left parenthesis
+00906. 00000 -  "missing left parenthesis"
+*Cause:    
+*Action:
+
+명령의 19 행에서 시작하는 중 오류 발생 -
+drop table dept_ddl
+오류 보고 -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+명령의 25 행에서 시작하는 중 오류 발생 -
+drop table salgrade_ddl
+오류 보고 -
+ORA-00942: table or view does not exist
+00942. 00000 -  "table or view does not exist"
+*Cause:    
+*Action:
+
+명령의 26 행에서 시작하는 중 오류 발생 -
+create table salgrade_ddl
+오류 보고 -
+ORA-00906: missing left parenthesis
+00906. 00000 -  "missing left parenthesis"
+*Cause:    
+*Action:
+
+Table SALGRADE_DDL이(가) 생성되었습니다.
+
+
+Table DEPT_DDL이(가) 생성되었습니다.
+
+이름     널? 유형           
+------ -- ------------ 
+DEPTNO    NUMBER(2)    
+DNAME     VARCHAR2(14) 
+LOC       VARCHAR2(13) 
+
+명령의 19 행에서 시작하는 중 오류 발생 -
+CREATE TABLE DEPT_DDL
+AS SELECT * FROM DEPT
+오류 보고 -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Table DEPT_DDL이(가) 삭제되었습니다.
+
+
+Table DEPT_DDL이(가) 생성되었습니다.
+
+이름     널? 유형           
+------ -- ------------ 
+DEPTNO    NUMBER(2)    
+DNAME     VARCHAR2(14) 
+LOC       VARCHAR2(13) 
+
+명령의 19 행에서 시작하는 중 오류 발생 -
+CREATE TABLE DEPT_DDL
+AS SELECT * FROM DEPT
+오류 보고 -
+ORA-00955: name is already used by an existing object
+00955. 00000 -  "name is already used by an existing object"
+*Cause:    
+*Action:
+
+Table DEPT_DDL이(가) 삭제되었습니다.
+
+
+Table DEPT_DDL이(가) 생성되었습니다.
+

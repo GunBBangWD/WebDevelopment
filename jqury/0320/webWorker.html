@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Find a number <br>
+    </p>
+    <form action="#">
+        <div id="result"></div>
+        <button>start</button>
+        <button>stopWorker</button>
+        
+    </form>
+    
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        // let webworker
+        // function startWorker(){
+        //     if(typeof(Worker)!=="undefined"){
+        //         if(typeof(webworker)=="undefined"){
+        //             webworker=new Worker("./js/worker.js")
+        //         }
+        //         webworker.onmessage=function(event){
+        //             console.log(event)
+        //             document.getElementById('result').innerHTML=event.data
+        //         }
+        //     }
+        // }
+        // function stopWorker(){
+        //     if(typeof(webworker)!=="undefined"){
+        //         webworker.terminate();
+        //         webworker=undefined
+        //     }
+        //     document.getElementById('result').innerHTML='0'
+        // }
+
+        let webworker2
+        $(function(){
+            $("#result+button").on({
+                click: ()=>{
+                    if(typeof(Worker)!=="undefined"){
+                        if(typeof(webworker2)=="undefined"){
+                            webworker2=new Worker("./js/worker.js")
+                        }
+                        webworker2.onmessage=function(event){
+                            console.log(event)
+                            $('#result').html(event.data)
+                        }
+                    }
+                }
+            })
+            $('#result+button+button').on({
+                click: ()=>{
+                    if(typeof(webworker2)!=="undefined"){
+                        webworker2.terminate();
+                        webworker2=undefined
+                    }
+                    $('#result').html('0')
+                }
+            })
+        })
+
+
+
+    </script>
+    
+</body>
+</html>

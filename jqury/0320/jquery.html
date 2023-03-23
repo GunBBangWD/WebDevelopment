@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{width: 50px;height: 40px;border: 3px outset green;}
+        .starthidden{display: none;}
+    </style>
+</head>
+<body>
+    <button>show hidden</button>
+    <div></div>
+    <!-- html 요소 -->
+    <div class="nameclass"></div> 
+
+
+
+
+
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        //$(document) == 문서 전체 의미 .ready() = 문서 시작할때 시작
+    $(document).ready(function(){ 
+        // :visible(j쿼리 지원) == div가 visible 상태인 요소들 j쿼리 객체 지정
+        // click() 메서드 사용
+        $("div:visible").click(function(){ 
+            //this = 이벤트가 발생한 요소 j쿼리 객체 지정
+            //css(a, b) = 요소 a속성 b값 추가 css(a) = 요소 a속성값 반환
+            $(this).css("background","yellow")
+        })
+        $('button').click(function(){
+            //show()해당 요소가 보여지게 해주는 함수, 인자의 효과 반영
+            $('div:hidden').show('fast')
+        })
+    })
+    
+
+
+
+    </script>
+    
+</body>
+</html>

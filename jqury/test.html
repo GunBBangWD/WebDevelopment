@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="BfA" style="border: 1px solid black;">before after 예시</div>
+    <p style="background-color: skyblue;">안녕하세요</p>
+    <div id="appendText" style="border: 1px solid black;">appendText</div>
+    <script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script>
+        $('#BfA').before('<div> before로 생성</div>')
+        $('#BfA').after('<div> after로 생성</div>')
+        //clone() 뒤 요소 내용 앞 요소에 복사
+        //add() 요소 추가 또는 선택자 추가
+        let temp=$('p').clone().add('<p>prependTo</p>')
+        let temp2 = $('p').clone().add('<p>appendTo</p>')
+        //to 유무 차이는 요소들 위치 앞뒤 바뀔뿐
+        temp.prependTo($('#appendText'))
+        temp2.appendTo($('#appendText'))
+    </script>
+</body>
+</html>
