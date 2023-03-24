@@ -1,0 +1,30 @@
+SQL문 정리
+
+CREATE TABLE 테이블명(
+칼럼명 자료형 제약조건...
+);
+OR
+CREATE TABLE 테이블명(
+칼럼명 자료형 제약조건...
+CONSTRAINT 또 다른 제약조건
+REFERENCES 테이블명(칼럼명) ON DELETE CASCADE << 해당 칼럼을 참조(외래키)하는 엔티티 모두 삭제
+); << 뒷 부분에 더 추가 가능
+
+
+
+INSERT
+INSERT INTO 테이블명 (칼럼명1,칼럼명2....) <생략 하면 전부 순서 맞춰서 기입해줘야 함
+VALUES(값1,값2,값3...)
+
+
+
+SELECT
+SELECT 칼럼명1,칼럼명2 or *(전체 칼럼)
+FROM 테이블명 <<(만약에 다른 DB랑 겹친다면 DB명.TABLE명 해주면 된다.)
+WHERE 조건
+
++)비교 연산자
+= < > <= >= <>(not의 의미)
+각 조건별 연산  AND, OR
+
++)ORDER BY 칼럼명 오름차순 ASC/내림차순 DESC 
