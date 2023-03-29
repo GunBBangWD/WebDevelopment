@@ -324,21 +324,25 @@ COMMIT;
 --                    ||TEMP1.ENAME||','||TEMP1.SAL);
 --    END LOOP;
 --END PROC_CURSOR;
+SELECT * FROM EMP;
 
 
-EXEC GONGTEST(7902);
+--EXEC GONGTEST(7902);
+--
+--SET SERVEROUTPUT ON;
+--
+--DECLARE
+--    v_ename VARCHAR2(50);
+--    v_job VARCHAR2(50);
+--    v_sal NUMBER(8,2);
+--BEGIN
+--    get_employee_info(7902, v_ename, v_job, v_sal);
+--    DBMS_OUTPUT.PUT_LINE('===================');
+--    DBMS_OUTPUT.PUT_LINE(v_ename || ' ' || v_job || ' ' || v_sal);
+--END;
 
-SET SERVEROUTPUT ON;
 
-DECLARE
-    v_ename VARCHAR2(50);
-    v_job VARCHAR2(50);
-    v_sal NUMBER(8,2);
-BEGIN
-    get_employee_info(7902, v_ename, v_job, v_sal);
-    DBMS_OUTPUT.PUT_LINE('===================');
-    DBMS_OUTPUT.PUT_LINE(v_ename || ' ' || v_job || ' ' || v_sal);
-END;
+
 
 
 
