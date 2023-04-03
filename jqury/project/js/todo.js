@@ -9,10 +9,10 @@ const toDoList=document.getElementById('todo-list');
 const TODOKEY='todos';
 let toDos=[];
 
-toDoForm.addEventListener('submit',toDoSubmitHandler);
+toDoForm.addEventListener('submit',toDoSubmitHandler); //
 
 function toDoSubmitHandler(event){
-    event.preventDefault();
+    event.preventDefault(); //기존 이벤트 중단
     const newTodo=toDoInput.value;
     toDoInput.value='';
     const newTodoObj={
