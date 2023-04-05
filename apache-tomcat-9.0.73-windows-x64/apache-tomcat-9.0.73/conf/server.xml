@@ -43,6 +43,7 @@
               description="User database that can be updated and saved"
               factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
               pathname="conf/tomcat-users.xml" />
+	<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" initialSize="0" maxIdle="20" maxTotal="20" maxWaitMillis="5000" name="dbcp_my_oracle" url="jdbc:oracle:thin:@localhost:1521:xe" username="gunhee" password="gksrjs0425" type="javax.sql.DataSource" />		  
   </GlobalNamingResources>
 
   <!-- A "Service" is a collection of one or more "Connectors" that share
